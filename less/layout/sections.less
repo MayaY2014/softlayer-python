@@ -88,12 +88,10 @@ section {
 // -------------------------
 
 .banner {
-  bottom: 0;
-  padding: 80px 0 120px;
   width: 100%;
   height: auto;
   background-color: @white;
-  color: @lighter3;
+  color: @lighter4;
   font-family: @font-family-sans;
   transition-duration: .5s;
   transition-property: all;
@@ -102,9 +100,10 @@ section {
     margin: 20px 0 0;
     color: inherit;
     font-weight: @font-weight-normal !important;
-    font-size: 24px;
-    font-family: inherit;
+    font-size: 25px;
+    font-family: @font-family-heading;
     line-height: @line-height-xsmall;
+    letter-spacing: -.04em;
   }
 
   p {
@@ -118,14 +117,24 @@ section {
   }
 }
 
-i#banner {
-  font-size: 114px;
+#banner-wrapper {
+  padding: 80px 0 0;
 }
 
-// Learn More
+@media (min-width: @screen-sm) {
+  #banner-wrapper {
+    padding: 80px 0 120px;
+  }
+}
+
+i#banner {
+  font-size: 128px;
+}
+
+// Tagline
 // -------------------------
 
-.learn-more {
+.tagline {
   padding: 50px 0;
-  background-color: @lighter8;
+  color: @lighter4;
 }
