@@ -1,0 +1,59 @@
+{% if page.title == "cli" %}  <!-- Determines which hero to show based on the page title -->
+
+<section class="hero"> <!-- Hero -->
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+
+  <h1 class="hero-name">{{site.project.name}}</h1>
+  <h2 class="hero-tagline">{{site.project.tagline}}</h2>
+
+<div class="hero-buttons">
+  <a class="btn white" href="{{page.baseurl}}getting-started">
+    Get Started
+  </a>
+
+  <a class="btn white" href="{{page.baseurl}}developers-guide">
+    Learn More
+  </a>
+</div>
+
+<div class="hero-version">
+  <!--<p><i class="fa fa-star"></i>
+  <span id="github-stargazers"><i class="fa fa-spinner fa-spin"></i></span> stargazers</p>-->
+
+  <p><i class="fa fa-rocket"></i>
+  Currently <span id="github-version"><i class="fa fa-spinner fa-spin"></i></span></p>
+</div>
+
+</div>
+</div>
+</div>
+</section> <!-- End Hero -->
+
+{% else %}
+
+<section class="hero"> <!-- Hero -->
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+
+  <h1 class="hero-name">Python Bindings</h1>
+  <h2 class="hero-tagline">A set of Python libraries that assist in calling the SoftLayer API</h2>
+
+<div class="hero-buttons">
+  <a class="btn white" href="http://softlayer-python.readthedocs.org/en/latest/index.html" target="_blank">
+    Learn More
+  </a>
+
+  <a class="btn white" href="{{page.baseurl}}cli">
+    SoftLayer CLI
+  </a>
+
+</div>
+</div>
+</div>
+</div>
+</section> <!-- End Hero -->
+
+{% endif %}

@@ -1,0 +1,94 @@
+#
+# * Config
+# * Stores static configuration and project data (use spaces, not tabs)
+# *
+# * Copyright (c) 2014 SoftLayer, an IBM Company
+# * Released under the MIT license
+#
+
+# ==============================
+# Project
+# ==============================
+
+project:
+  name:           SoftLayer CLI
+  tagline:        Put your resources to good use effortlessly from the command line # or "Manage your virtual resources promptly from the command line"
+  www:            http://softlayer.github.io/softlayer-python
+  version:        0.3.0  # This is the boilerplate version, not the product version
+
+# ==============================
+# Owner (or Business)
+# ==============================
+
+owner:
+  name:           "SoftLayer, an IBM Company"  # quotes are required only if punctuation is present in your name
+  www:            http://www.softlayer.com
+  blog:           http://sldn.softlayer.com/blog
+  twitter:        SoftLayerDevs
+
+# ==============================
+# License
+# ==============================
+
+license:
+  type:           MIT
+  www:            http://raw.githubusercontent.com/softlayer/softlayer-python/master/LICENSE
+
+# ==============================
+# Markdown
+# ==============================
+
+highlighter:      pygments
+markdown:         redcarpet
+redcarpet:
+  extensions:     [ "autolink",
+                    "fenced_code_blocks",
+                    "lax_spacing",
+                    "smart",
+                    "strikethrough",
+                    "superscript",
+                    "tables",
+                    "underline",
+                    "with_toc_data"
+                  ]
+
+# ==============================
+# Server
+# ==============================
+
+baseurl:          /softlayer-python
+permalink:        pretty
+exclude:          [ ".gitignore",
+                    "Gemfile",
+                    "Gruntfile.coffee",
+                    "coffeescript",
+                    "less",
+                    "LICENSE",
+                    "node_modules",
+                    "package.json",
+                    "README.md"
+                  ]
+
+# ==============================
+# Analytics
+# ==============================
+
+google:
+  id:             UA-XXXXXXXX-X    # UA-40037365-3
+  domain:         XXXXXX.github.io # softlayer.github.io
+
+# ==============================
+# GitHub
+# ==============================
+
+github:
+  org:            http://github.com/softlayer
+  repo:           http://github.com/softlayer/softlayer-python
+  fork:           http://github.com/softlayer/softlayer-python/fork
+  star:           http://github.com/softlayer/softlayer-python/stargazers
+  watch:          http://github.com/softlayer/softlayer-python/watchers
+  releases:       http://github.com/softlayer/softlayer-python/releases
+  contributors:   http://github.com/softlayer/softlayer-python/contributors
+  issues:
+    open:         http://github.com/softlayer/softlayer-python/issues?state=open
+    closed:       http://github.com/softlayer/softlayer-python/issues?state=closed

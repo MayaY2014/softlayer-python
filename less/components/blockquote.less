@@ -1,0 +1,46 @@
+/* =========================
+   Blockquote
+   ========================= */
+
+blockquote {
+  margin: @component-margin 0;
+  padding: @component-padding;
+  border-left: 5px solid transparent;
+  color: @blockquote-color;
+  font-size: @blockquote-font-size;
+  line-height: @line-height-xsmall;
+
+  p {
+    &:before {
+      content: "\f10d \00a0";
+      font-family: FontAwesome;
+      opacity: .4;
+    }
+  }
+
+  p, ul, ol {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  small, .small {
+    display: block;
+    color: @blockquote-small-color;
+    font-size: 80%;
+    line-height: @line-height-normal;
+    &:before {
+      content: "\2014 \00a0";
+    }
+  }
+
+  @media (min-width: @screen-sm) {
+    blockquote {
+      padding: 7px 50px @component-padding;
+      font-size: @font-size-small;
+    }
+  }
+}

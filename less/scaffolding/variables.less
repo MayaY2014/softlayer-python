@@ -1,0 +1,349 @@
+/* =========================
+   Variables
+   ========================= */
+
+/*
+ * Contents
+ *
+ * 1. Colors
+ * 2. Fonts
+ * 3. Box sizing
+ * 4. Dimensions
+ * 5. Grid system
+ *
+ */
+
+/* COLORS
+   ========================= */
+
+// Defaults
+// -------------------------
+
+@white:                     #fff;
+
+@lighter9:                  #fafafa;
+@lighter8:                  #f4f4f4;
+@lighter7:                  #f0f0f0;
+@lighter6:                  #e4e4e2;
+@lighter5:                  #b3b3b1;
+@lighter4:                  #9f9f9d;
+@lighter3:                  #787876;
+@lighter2:                  #454543;
+@lighter1:                  #262625;
+
+@black:                     #191918;
+
+// Palette
+// -------------------------
+
+@default:                   @black;
+@gray:                      #7f8c8d;
+@blue:                      #2980b9;
+@green:                     #27ae60;
+@red:                       #e74c3c;
+
+// Base
+// -------------------------
+
+@body-bg:                   @white;
+@text-color:                @black;
+
+// Links
+// -------------------------
+
+@link-color:                @black;
+@link-hover-color:          lighten(@link-color, 8%);
+
+// Footer
+// -------------------------
+
+@footer-link:               @lighter4;
+@footer-border:             @lighter7;
+@footer-hover:              darken(@footer-link, 10%);
+
+// Blockquote
+// -------------------------
+
+@blockquote-small-color:    @lighter4;
+@blockquote-border-color:   @lighter4;
+@blockquote-color:          @lighter3;
+
+// Headings
+// -------------------------
+
+@headings-color:            @black;
+@headings-color-small:      @lighter4;
+
+// Menu
+// -------------------------
+
+@menu-bg:                   @lighter1;
+@menu-color:                @lighter8;
+@menu-links:                @white;
+
+@menu-divider:              @lighter2;
+
+// Subnav
+// -------------------------
+
+@subnav-color:              @lighter5;
+@subnav-active-color:       @lighter2;
+
+// Buttons
+// -------------------------
+
+// Normal
+
+@btn-default-color:         @default;
+@btn-default-bg:            transparent;
+@btn-default-border:        lighten(@default, 8%);
+@btn-default-hover:         @white;
+
+@btn-gray-color:            @gray;
+@btn-gray-bg:               transparent;
+@btn-gray-border:           lighten(@gray, 8%);
+@btn-gray-hover:            @white;
+
+@btn-red-color:             @red;
+@btn-red-bg:                transparent;
+@btn-red-border:            lighten(@red, 8%);
+@btn-red-hover:             @white;
+
+@btn-blue-color:            @blue;
+@btn-blue-bg:               transparent;
+@btn-blue-border:           lighten(@blue, 8%);
+@btn-blue-hover:            @white;
+
+@btn-green-color:           @green;
+@btn-green-bg:              transparent;
+@btn-green-border:          lighten(@green, 8%);
+@btn-green-hover:           @white;
+
+@btn-white-color:           @white;
+@btn-white-bg:              transparent;
+@btn-white-border:          lighten(@white, 8%);
+@btn-white-hover:           @gray;
+
+@btn-font-weight:           normal;
+
+// Solid
+
+@solid-btn-default-color:   @white;
+@solid-btn-default-bg:      @default;
+@solid-btn-default-border:  @default;
+
+@solid-btn-gray-color:      @white;
+@solid-btn-gray-bg:         @gray;
+@solid-btn-gray-border:     @gray;
+
+@solid-btn-red-color:       @white;
+@solid-btn-red-bg:          @red;
+@solid-btn-red-border:      @red;
+
+@solid-btn-blue-color:      @white;
+@solid-btn-blue-bg:         @blue;
+@solid-btn-blue-border:     @blue;
+
+@solid-btn-green-color:     @white;
+@solid-btn-green-bg:        @green;
+@solid-btn-green-border:    @green;
+
+@solid-btn-white-color:     @gray;
+@solid-btn-white-bg:        @white;
+@solid-btn-white-border:    @white;
+
+@solid-btn-font-weight:     normal;
+
+// Components
+// -------------------------
+
+@component-active-color:    @lighter9;
+@component-active-bg:       @gray;
+
+// Table
+// -------------------------
+
+@table-bg-accent:           @lighter8;
+@table-border-color:        @lighter6;
+
+// Message
+// -------------------------
+
+@message-bg:                @lighter3;
+@message-color:             @lighter9;
+
+// Pagination
+// -------------------------
+
+@pagination-color:          @link-color;
+@pagination-bg:             @lighter9;
+@pagination-border:         @lighter5;
+
+@pagination-hover-color:    @link-hover-color;
+@pagination-hover-bg:       @lighter5;
+@pagination-hover-border:   @lighter5;
+
+@pagination-active-border:  @gray;
+@pagination-active-bg:      @gray;
+@pagination-active-color:   @lighter9;
+
+@pagination-disabled-color: @lighter4;
+@pagination-disabled-bg:    @lighter9;
+@pagination-disabled-border:@lighter5;
+
+// Pager
+// -------------------------
+
+@pager-bg:                  @pagination-bg;
+@pager-border:              @pagination-border;
+@pager-hover-bg:            @pagination-hover-bg;
+
+@pager-active-bg:           @pagination-active-bg;
+@pager-active-color:        @pagination-active-color;
+
+@pager-disabled-color:      @pagination-disabled-color;
+
+// Code
+// -------------------------
+
+@code-color:                @gray;
+@code-bg:                   @lighter9;
+@code-border:               @lighter7;
+
+@pre-bg:                    @lighter8;
+@pre-color:                 @lighter1;
+@pre-border-color:          @lighter6;
+
+// Miscellaneous
+// -------------------------
+
+@hr-color:                  @lighter6;
+
+// Nav
+// -------------------------
+
+@nav-link-hover-bg:                       @lighter5;
+@nav-open-link-hover-color:               @lighter9;
+
+@tabs-border-color:                       @lighter5;
+@tabs-link-hover-border-color:            @lighter5;
+@tabs-active-link-hover-bg:               @body-bg;
+@tabs-active-link-hover-color:            @lighter3;
+@tabs-active-link-hover-border-color:     @lighter5;
+
+@tabs-justified-link-border-color:        @lighter5;
+@tabs-justified-active-link-border-color: @body-bg;
+
+
+/* FONTS
+   ========================= */
+
+// Font family
+// -------------------------
+
+@font-family-sans:            "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:           Georgia, Cambria, serif;
+@font-family-monospace:       Menlo, Monaco, Consolas, monospace;
+
+@font-family-heading:         "jaf-bernino-sans", "Noto Sans", "Lucida Grande", sans-serif;
+
+// Font sizes
+// -------------------------
+
+@font-size-normal:            15px;
+
+@font-size-large:             17px;
+@font-size-medium:            13.5px;
+@font-size-small:             13px;
+@font-size-xsmall:            12px;
+
+@font-size-h1:                30px;
+@font-size-h2:                25px;
+@font-size-h3:                23.5px;
+@font-size-h4:                17px;
+
+// Buttons
+
+@button-font-size-normal:     @font-size-normal;
+@button-font-size-large:      @font-size-large;
+@button-font-size-small:      @font-size-small;
+
+// Miscellaneous
+
+@blockquote-font-size:        @font-size-large;
+@nav-font-size:               @font-size-medium;
+
+// Font weight
+// -------------------------
+
+@font-weight-light:           300;
+@font-weight-normal:          400;
+@font-weight-bold:            700;
+
+// Line height
+// -------------------------
+
+@line-height-normal:          1.4667;
+
+@line-height-heading:         1.1;
+@line-height-large:           1.2941;
+@line-height-small:           1.6923;
+@line-height-xsmall:          1.3750;
+
+@line-height-base:            22px;
+
+
+/* BOX SIZING
+   ========================= */
+
+// Padding
+// -------------------------
+
+@padding-normal-vertical:     8px;
+@padding-normal-horizontal:   18px;
+
+@padding-large-vertical:      8px;
+@padding-large-horizontal:    22px;
+
+@padding-small-vertical:      8px;
+@padding-small-horizontal:    15px;
+
+@component-padding:           7px 15px;
+@message-padding:             15px 22px;
+@nav-link-padding:            10px 15px;
+
+// Margins
+// -------------------------
+
+@component-margin:            12px;
+@heading-margin:              1.6667;
+
+
+/* DIMENSIONS
+   ========================= */
+
+// Radius
+// -------------------------
+
+@border-radius-normal:        4px;
+@border-radius-large:         5px;
+@border-radius-small:         3px;
+@border-radius-full:          999px;
+
+@message-border-radius:       @border-radius-normal;
+@pager-border-radius:         (@border-radius-large * 3);
+
+// Offset
+// -------------------------
+
+@component-offset-horizontal: 180px;
+
+
+/* GRID SYSTEM
+   ========================= */
+
+@grid-columns:                12;
+@grid-gutter-width:           30px;
+
+@grid-float-breakpoint:       @screen-sm;
+@grid-float-breakpoint-max:   (@grid-float-breakpoint - 1);

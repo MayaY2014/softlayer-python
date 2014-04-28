@@ -1,0 +1,8 @@
+<!-- Generates the subnav's table of contents for pages with "layout: pages" front-matter -->
+{% if layout == pages %}
+  <script>
+    $(document).ready(function() {
+      $('.tocify').tocify();
+    });
+  </script>
+{% endif %}

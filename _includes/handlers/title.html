@@ -1,0 +1,5 @@
+{% if page.header == null %}
+  {{site.project.name}} &middot; {{site.owner.name}}
+{% else %}
+  {{page.header}} &middot; {{site.project.name}}
+{% endif %}

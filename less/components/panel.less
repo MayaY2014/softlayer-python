@@ -1,0 +1,58 @@
+/* =========================
+   Panel
+   ========================= */
+
+.panel {
+  position: relative;
+  margin: 0 0 @component-margin;
+  padding: 30px 10px 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @lighter5;
+  border-radius: @border-radius-large;
+
+  + .highlight {
+      margin: -10px -10px 10px;
+      border-width: 0 0 1px;
+      border-radius: @border-radius-large;
+  }
+
+  .container {
+      width: auto;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  &:after {
+    position: absolute;
+    top:  0;
+    left: 0;
+    padding: 8px 12px;
+    color: darken(@lighter5, 10%);
+    content: "Example";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: @font-weight-bold;
+    font-size: @font-size-xsmall;
+  }
+
+  &>p:last-child,
+  &>ul:last-child,
+  &>ol:last-child,
+  &>blockquote:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @screen-sm) {
+  .panel + .highlight {
+    margin-top: -11px;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-bottom-right-radius: @border-radius-normal;
+    border-bottom-left-radius: @border-radius-normal;
+  }
+}

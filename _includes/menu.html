@@ -1,0 +1,55 @@
+{% if page.title == "index" %}  <!-- Determines which menu to show based on the page title -->
+
+<a id="menu-toggle" href="#"><i class="fa fa-bars"></i></a> <!-- Controls originate from lateral.coffee -->
+
+<nav id="menu">
+<div class="menu-nav">
+
+  <a class="menu-item{% if page.url == "/" %} active {% endif %}" href="{{page.baseurl}}"><i class="fa fa-home"></i>Home</a>
+  <a class="menu-item" href="//softlayer-python.readthedocs.org/en/latest" target="_blank"><i class="fa fa-chevron-right"></i>Documentation</a>
+  <a class="menu-item" href="{{page.baseurl}}cli"><i class="fa fa-chevron-right"></i>SoftLayer CLI</a>
+
+  <ul class="divider"></ul>
+  <a class="menu-item" href="{{site.github.repo}}" target="_blank"><i class="fa fa-github-alt"></i>Code</a>
+  <a class="menu-item" href="{{site.github.issues.open}}" target="_blank"><i class="fa fa-bug"></i>Issues</a>
+  <a class="menu-item" href="{{site.github.releases}}" target="_blank"><i class="fa fa-tags"></i>Release History</a>
+
+  <ul class="divider"></ul>
+  <a class="menu-item" href="{{site.github.star}}" target="_blank"><i class="fa fa-star"></i>Star Our Repo</a>
+  <a class="menu-item" href="{{site.github.fork}}" target="_blank"><i class="fa fa-code-fork"></i>Fork Our Repo</a>
+  <a class="menu-item" href="//twitter.com/{{site.owner.twitter}}" target="_blank"><i class="fa fa-twitter"></i>@{{site.owner.twitter}}</a>
+
+  <ul class="divider"></ul>
+  <p class="menu-footer"> © {{site.time | date: "%Y"}} {{site.owner.name}}. All rights reserved.</p>
+
+</div>
+</nav>
+
+{% else %}
+
+<a id="menu-toggle" href="#"><i class="fa fa-bars"></i></a> <!-- Controls originate from lateral.coffee -->
+
+<nav id="menu">
+<div class="menu-nav">
+
+  <a class="menu-item{% if page.url == "/" %} active {% endif %}" href="{{page.baseurl}}cli"><i class="fa fa-home"></i>Home</a>
+
+  {% include handlers/items.html %}
+
+  <ul class="divider"></ul>
+  <a class="menu-item" href="{{site.github.repo}}" target="_blank"><i class="fa fa-github-alt"></i>Code</a>
+  <a class="menu-item" href="{{site.github.issues.open}}" target="_blank"><i class="fa fa-bug"></i>Issues</a>
+  <a class="menu-item" href="{{site.github.releases}}" target="_blank"><i class="fa fa-tags"></i>Release History</a>
+
+  <ul class="divider"></ul>
+  <a class="menu-item" href="{{site.github.star}}" target="_blank"><i class="fa fa-star"></i>Star Our Repo</a>
+  <a class="menu-item" href="{{site.github.fork}}" target="_blank"><i class="fa fa-code-fork"></i>Fork Our Repo</a>
+  <a class="menu-item" href="//twitter.com/{{site.owner.twitter}}" target="_blank"><i class="fa fa-twitter"></i>@{{site.owner.twitter}}</a>
+
+  <ul class="divider"></ul>
+  <p class="menu-footer"> © {{site.time | date: "%Y"}} {{site.owner.name}}. All rights reserved.</p>
+
+</div>
+</nav>
+
+{% endif %}

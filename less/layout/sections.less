@@ -1,0 +1,131 @@
+/* =========================
+   Sections
+   ========================= */
+
+section {
+  text-align: center;
+}
+
+// Hero
+// -------------------------
+
+.hero {
+  padding: 50px 0;
+  width: 100%;
+  height: auto;
+  background-color: @black;
+  color: @white;
+}
+
+.hero-name {
+  margin: 50px 0 0;
+  color: @white;
+  font-weight: @font-weight-bold;
+  font-size: 39px;
+}
+
+.hero-tagline {
+  margin: 5px 0 12px;
+  color: @lighter8;
+  letter-spacing: -.02em;
+  font-weight: @font-weight-light;
+  font-size: 23px;
+  line-height: 1.1818;
+}
+
+.hero-buttons {
+  display: block;
+  margin-bottom: 21px;
+
+  > a.btn.white {
+    margin-bottom: auto 2px;
+    width: 130px;
+  }
+}
+
+.hero-version {
+  p {
+    margin: 22px 0 0;
+    color: @lighter6;
+    letter-spacing: -.002em;
+    font-size: 14px;
+    font-family: @font-family-heading;
+
+    > .fa.fa-rocket {
+      margin-right: 3px;
+    }
+  }
+}
+
+@media (min-width: @screen-sm) {
+  .hero {
+    padding: 200px 0 250px;
+    height: 100%;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../../public/images/featured-bg.jpg");
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../../public/images/featured-bg.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../../public/images/featured-bg.jpg");
+    background-color: @black;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero-name {
+    margin: 0;
+    font-size: 50px;
+  }
+
+  .hero-tagline {
+    margin: 0 20px 20px;
+    font-size: 28px;
+    line-height: 1.214;
+  }
+}
+
+// Banner
+// -------------------------
+
+.banner {
+  bottom: 0;
+  padding: 80px 0 120px;
+  width: 100%;
+  height: auto;
+  background-color: @white;
+  color: @lighter3;
+  font-family: @font-family-sans;
+  transition-duration: .5s;
+  transition-property: all;
+
+  h2 {
+    margin: 20px 0 0;
+    color: inherit;
+    font-weight: @font-weight-normal !important;
+    font-size: 24px;
+    font-family: inherit;
+    line-height: @line-height-xsmall;
+  }
+
+  p {
+    color: inherit;
+    text-shadow: none;
+    letter-spacing: 0;
+    font-weight: @font-weight-normal !important;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.5;
+  }
+}
+
+i#banner {
+  font-size: 114px;
+}
+
+// Learn More
+// -------------------------
+
+.learn-more {
+  padding: 50px 0;
+  background-color: @lighter8;
+}

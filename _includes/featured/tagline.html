@@ -1,0 +1,27 @@
+{% if page.title == "cli" %}  <!-- Determines which tagline to show based on the page title -->
+
+<section class="tagline"> <!-- Tagline -->
+<div class="container">
+<div class="col-lg-12">
+
+  <h1>Managing your Virtual Servers just got a whole lot easier</h1>
+
+</div>
+</div>
+</section> <!-- End Tagline -->
+
+{% else %}
+
+<section class="tagline"> <!-- Tagline -->
+<div class="container">
+<div class="col-lg-12">
+
+  <h1>Python Bindings is open source</h1>
+  <h2>It's hosted, developed, and maintained publicly on GitHub</h2>
+  <a type="button" class="btn large solid-gray" href="http://github.com/softlayer/softlayer-python">View on GitHub</a>
+
+</div>
+</div>
+</section> <!-- End Tagline -->
+
+{% endif %}

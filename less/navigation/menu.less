@@ -1,0 +1,121 @@
+/* =========================
+   Menu
+   ========================= */
+
+#menu {
+  position: fixed;
+  z-index: 1000;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: @menu-bg;
+  color: @menu-color;
+  font-size: @nav-font-size;
+}
+
+.opened {
+  left: 0!important;
+}
+
+.content {
+  position: relative;
+  left: 0;
+  overflow-x: hidden;
+
+  &.pushed-right {
+    left: 242px;
+  }
+}
+
+#menu, .opened, .content, .pushed-right {
+  -webkit-transition: all .4s ease-in-out 0;
+     -moz-transition: all .4s ease-in-out 0;
+      -ms-transition: all .4s ease-in-out 0;
+       -o-transition: all .4s ease-in-out 0;
+          transition: all .4s ease-in-out 0;
+}
+
+a#menu-toggle {
+  position: absolute;
+  top: 13px;
+  left: 16px;
+  display: block;
+  background-color: transparent;
+  color: @lighter5;
+  text-align: center;
+  font-size: 25px;
+  opacity: 1;
+  cursor: pointer;
+
+  &.fixed {
+    position: fixed;
+    z-index: 2000;
+    color: @white;
+  }
+}
+
+.menu-nav {
+  padding-top: 54px;
+}
+
+.menu-item {
+  display: block;
+  padding: @component-padding;
+  color: @menu-color;
+  line-height: 1;
+}
+
+.menu-item.active,
+.menu-item:hover,
+.menu-item:focus {
+  border-color: transparent;
+  background-color: rgba(255,255,255,.085);
+  color: @menu-links;
+  text-decoration: none;
+}
+
+.menu-footer {
+  display: block;
+  margin: 0;
+  padding: 7px 15px 0;
+  color: @lighter3;
+  word-break: break-word;
+  line-height: @line-height-xsmall;
+}
+
+.divider {
+  .nav-divider(@menu-divider);
+}
+
+// Menu icons
+// -------------------------
+
+i {
+
+  &.fa.fa-code {
+    margin-right: 5px;
+  }
+
+  &.fa.fa-home,
+  &.fa.fa-tags {
+    margin-right: 6px;
+  }
+
+  &.fa.fa-twitter,
+  &.fa.fa-github-alt {
+    margin-right: 7px;
+  }
+
+  &.fa.fa-star,
+  &.fa.fa-bug {
+    margin-right: 8px;
+  }
+
+  &.fa-chevron-right {
+    margin-right: 10px;
+  }
+
+  &.fa.fa-code-fork {
+    margin-right: 12px;
+  }
+}

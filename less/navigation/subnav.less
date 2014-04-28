@@ -1,0 +1,41 @@
+/* =========================
+   Subnav
+   ========================= */
+
+.subnav {
+  display: none;
+}
+
+@media (min-width: @screen-md) {
+  .subnav .nav > .active > ul {
+    display: block;
+  }
+
+  .subnav .nav & > li & > li {
+    padding: 4px;
+    font-size: @nav-font-size;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    > a {
+      border-bottom: 0;
+      color: @subnav-color;
+
+      &:hover,
+      &:focus,
+      &.active {
+        color: @subnav-active-color;
+      }
+    }
+  }
+
+  .subnav {
+    position: fixed;
+    display: block;
+    padding-left: inherit;
+    text-align: left;
+  }
+}

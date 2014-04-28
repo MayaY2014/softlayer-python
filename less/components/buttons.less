@@ -1,0 +1,158 @@
+/* =========================
+   Buttons
+   ========================= */
+
+// Normal buttons
+// -------------------------
+
+.btn {
+  .button-size(@padding-normal-vertical; @padding-normal-horizontal; @button-font-size-normal; @line-height-normal; @border-radius-full);
+  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border; @btn-default-hover);
+  display: inline-block;
+  border: 1px solid transparent;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-family: @font-family-heading;
+  cursor: pointer;
+  transition-duration: .3s;
+  transition-property: all;
+
+  &:focus {
+    .tab-focus();
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    color: @btn-default-hover;
+    text-decoration: none;
+    transition-duration: .3s;
+    transition-property: all;
+  }
+
+  &.solid {
+    .solid-button-variant(@solid-btn-default-color; @solid-btn-default-bg; @solid-btn-default-border);
+  }
+}
+
+// Normal variants
+
+.gray  {.button-variant(@btn-gray-color; @btn-gray-bg; @btn-gray-border; @btn-gray-hover);}
+.red   {.button-variant(@btn-red-color; @btn-red-bg; @btn-red-border; @btn-red-hover);}
+.green {.button-variant(@btn-green-color; @btn-green-bg; @btn-green-border; @btn-green-hover);}
+.blue  {.button-variant(@btn-blue-color; @btn-blue-bg; @btn-blue-border; @btn-blue-hover);}
+.white {.button-variant(@btn-white-color; @btn-white-bg; @btn-white-border; @btn-white-hover);}
+
+// Solid variants
+
+.solid       {.solid-button-variant(@solid-btn-default-color; @solid-btn-default-bg; @solid-btn-default-border);}
+.solid-gray  {.solid-button-variant(@solid-btn-gray-color; @solid-btn-gray-bg; @solid-btn-gray-border);}
+.solid-red   {.solid-button-variant(@solid-btn-red-color; @solid-btn-red-bg; @solid-btn-red-border);}
+.solid-green {.solid-button-variant(@solid-btn-green-color; @solid-btn-green-bg; @solid-btn-green-border);}
+.solid-blue  {.solid-button-variant(@solid-btn-blue-color; @solid-btn-blue-bg; @solid-btn-blue-border);}
+.solid-white {.solid-button-variant(@solid-btn-white-color; @solid-btn-white-bg; @solid-btn-white-border);}
+
+// Sphere
+// -------------------------
+
+.sphere {
+  margin-top: 15px;
+  padding: @component-padding;
+  width: 150px;
+  height: 150px;
+  border: 1px solid @lighter6;
+  border-radius: 50%;
+  background-color: transparent;
+  color: darken(@lighter4, 2%);
+  font-size: floor(@button-font-size-normal * 3);
+  -webkit-transition: background .3s ease-in-out;
+     -moz-transition: background .3s ease-in-out;
+          transition: background .3s ease-in-out;
+}
+
+.sphere:hover,
+.sphere:focus {
+  border: 1px solid darken(@lighter6, 8%);
+  background-color: inherit;
+  color: darken(@lighter4, 8%);
+}
+
+// Scroll
+// -------------------------
+
+#scroll-up {
+  position: fixed;
+  right: 14px;
+  bottom: 10px;
+  visibility: hidden;
+  padding: 10px 14px;
+  border-radius: @border-radius-full;
+  background-color: @lighter2;
+  color: @white;
+  text-decoration: none;
+  line-height: 0;
+  opacity: .2;
+  -webkit-transition: all .3s ease-in-out 0;
+     -moz-transition: all .3s ease-in-out 0;
+      -ms-transition: all .3s ease-in-out 0;
+       -o-transition: all .3s ease-in-out 0;
+          transition: all .3s ease-in-out 0;
+}
+
+@media (min-width: @screen-sm) {
+  #scroll-up {
+    background-color: transparent;
+    color: @lighter5;
+    font-size: 22px;
+    opacity: 1;
+
+    &:hover {
+      bottom: 12px;
+      color: @lighter4;
+    }
+  }
+}
+
+// Control
+// -------------------------
+
+.control {
+  display: none;
+}
+
+@media (min-width: @screen-sm) {
+  .control {
+    display: inherit;
+    margin: 0;
+    margin-top: -12px;
+    padding: 10px;
+    width: 49px;
+    height: 49px;
+    border-color: transparent;
+    border-radius: @border-radius-full;
+    background-color: darken(@lighter4, 2%);
+    color: @white;
+    font-size: inherit;
+    opacity: .8;
+    -webkit-transition: background .3s ease-in-out;
+       -moz-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+  }
+
+  .control:hover,
+  .control:focus {
+    border-color: transparent;
+    background-color: darken(@lighter5, 10%);
+    color: @white;
+  }
+}
+
+// Optional button sizes
+// -------------------------
+
+.large {.button-size(@padding-large-vertical; @padding-large-horizontal; @button-font-size-large; @line-height-large; @border-radius-full);}
+.small {.button-size(@padding-small-vertical; @padding-small-horizontal; @button-font-size-small; @line-height-small; @border-radius-full);}
