@@ -59,6 +59,7 @@ module.exports = (grunt) ->
         options:
           banner: "<%= banner %>"
         src: [
+          "<%= coffee.cache.dest %>octokit.js"
           "<%= coffee.cache.dest %>unclassy.js"
           "<%= coffee.cache.dest %>lateral.js"
           "<%= coffee.cache.dest %>tocify.js"
