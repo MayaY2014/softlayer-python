@@ -4,6 +4,7 @@
 
 section {
   text-align: center;
+  font-family: @font-family-heading;
 }
 
 // Hero
@@ -46,14 +47,9 @@ section {
 .hero-version {
   p {
     margin: 22px 0 0;
-    color: @lighter6;
+    color: @lighter5;
     letter-spacing: -.002em;
     font-size: 14px;
-    font-family: @font-family-heading;
-
-    > .fa.fa-rocket {
-      margin-right: 3px;
-    }
   }
 }
 
@@ -92,7 +88,6 @@ section {
   height: auto;
   background-color: @white;
   color: @lighter4;
-  font-family: @font-family-sans;
   transition-duration: .5s;
   transition-property: all;
 
@@ -101,7 +96,6 @@ section {
     color: inherit;
     font-weight: @font-weight-normal !important;
     font-size: 25px;
-    font-family: @font-family-heading;
     line-height: @line-height-xsmall;
     letter-spacing: -.04em;
   }
@@ -111,24 +105,28 @@ section {
     text-shadow: none;
     letter-spacing: 0;
     font-weight: @font-weight-normal !important;
+    font-family: @font-family-sans;
     font-size: 16px;
-    font-family: inherit;
     line-height: 1.5;
   }
 }
 
 #banner-wrapper {
-  padding: 80px 0 0;
+  padding-top: 80px;
+  padding-bottom: 0;
+  &:last-child {
+    padding-bottom: 80px;
+  }
 }
 
 @media (min-width: @screen-sm) {
   #banner-wrapper {
-    padding: 80px 0 120px;
+    padding-bottom: 120px;
   }
 }
 
 i#banner {
-  font-size: 128px;
+  font-size: 158px;
 }
 
 // Tagline
@@ -136,5 +134,9 @@ i#banner {
 
 .tagline {
   padding: 50px 0;
-  color: @lighter4;
+
+  h1 {
+    color: @lighter4;
+    font-size: 39px;
+  }
 }
