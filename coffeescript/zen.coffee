@@ -7,14 +7,18 @@
 #
 
 zen = (->
-    #save support
-    init = ->
-        bindElements()
-        loadState()  if supportsHtmlStorage()
+  
+  expandScreenIcon = "&#xe000;"
+  shrinkScreenIcon = "&#xe004;"
+  darkLayout = false
+  init: init
+
+  init = ->  # HTML5 local storage
+      bindElements()
+      loadState()  if supportsHtmlStorage()
     return
 
-  loadState = ->
-    # Activate color switch
+  loadState = ->  # Activates color switch
     if localStorage["darkLayout"] is "true"
       if darkLayout is false
         document.body.className = "yang"
@@ -31,7 +35,7 @@ zen = (->
   bindElements = ->
 
     # Body element for light/dark styles
-    body = document.body
+    body = document.body  # Delete if reserved in an adjoining script
     zenContainer = document.querySelector(".zen")
 
     # UI element for color flip
@@ -73,9 +77,4 @@ zen = (->
     darkLayout = not darkLayout
     saveState()
     return
-
-  expandScreenIcon = "&#xe000;"
-  shrinkScreenIcon = "&#xe004;"
-  darkLayout = false
-  init: init
 )()
