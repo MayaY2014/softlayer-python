@@ -24,6 +24,7 @@
       ).get().sort()[0]
 
     level = get_level(headers[0])
+    this_level = undefined
     html = ""
     headers.on("click", ->
       window.location.hash = @id
