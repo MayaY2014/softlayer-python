@@ -22,7 +22,7 @@ Our vision for this boilerplate derived from a number of key initiatives.
 * Deploy minified or unminified JavaScript and CSS in production
 * Run the site locally on modern Windows OS platforms
 * ~~Create new Markdown pages on-the-fly from the command line~~
-* ~~Zen mode to hide reading distractions and an inverted canvas for those that prefer the Darkside~~ 
+* ~~Zen mode to hide reading distractions and an inverted canvas for those that prefer the Darkside~~
 
 
 ### Features and Delighters
@@ -52,7 +52,7 @@ Our vision for this boilerplate derived from a number of key initiatives.
 
 ### Baked-in Automation
 
-We're big proponents of the DRY (don't repeat yourself) principle. That's why automation became a distinct competency for this project. The more automation there is, the less repetitive work you have (and hopefully the less mistakes you make). 
+We're big proponents of the DRY (don't repeat yourself) principle. That's why automation became a distinct competency for this project. The more automation there is, the less repetitive work you have (and hopefully the less mistakes you make).
 
 Aside from [Grunt](http://gruntjs.com "Grunt"), we baked in a few automated tasks of our own.
 
@@ -383,14 +383,6 @@ If you have Package Control, skip the rest of this and click any of the links be
 
 ---
 
-## Troubleshooting
+## Useful Resources
 
-
-#### Unable to parse "package.json" file
-
-Remove any comments from package.json. Comment are not allowed in JSON files.
-
-
-#### Errors while running `npm install`
-
-Since the version in package.json is not used, it makes sense to either delete it or use a generic default such as "0" or "0.0.0". Modifying or removing the version, however, will cause errors during the `npm install` process. It is required by Node. We suggest leaving it as-is to avoid any issues.
+* [Git Automation with OAuth Tokens](http://help.github.com/articles/git-automation-with-oauth-tokens)
