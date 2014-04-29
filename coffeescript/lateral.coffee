@@ -6,7 +6,7 @@
 # * Released under the MIT license
 #
 
-# Enables the sliding maneuverability for the sidebar
+# Enables the sliding maneuverability for the menu
 
 menuToggle = document.getElementById("menu-toggle")
 menuActive = document.getElementById("menu")
