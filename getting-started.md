@@ -10,7 +10,7 @@ baseurl: "../"
 > [Insert content here]
 
 <summary class="message">
-To learn more about deployment, support, and compatibility, check out our [Developers Guide]({{page.baseurl}}developers-guide).
+For information about deployment, support, and compatibility, check out our [Developer's Guide]({{page.baseurl}}developers-guide).
 </summary>
 
 # Specifications
@@ -19,11 +19,7 @@ To learn more about deployment, support, and compatibility, check out our [Devel
 
 # Download and Clone
 
-There are a number of ways to download or clone {{site.project.name}} from GitHub. Of these, we included the four popular options below.
-
-<summary class="message">
-For additional options, visit our [{{site.project.name}} page]({{site.github.repo}}).
-</summary>
+There are a number of ways to download and clone {{site.project.name}} from GitHub. Of these, we provided the four most popular ones below.
 
 #### Tarball Download
 ```bash
@@ -45,7 +41,7 @@ git clone https://github.com/softlayer/softlayer-python.git
 git clone git@github.com:softlayer/softlayer-python.git
 ```
 
-Is this starting to sound Greek? [GitHub Help](http://help.github.com) is a great resource for everything GitHub, or download the [Git Cheatsheet](http://github.com/github/training-materials/blob/master/downloads/github-git-cheat-sheet.pdf?raw=true) if you just need a refresher.
+Is the room starting to spin? Try [GitHub Help](http://help.github.com). It's a great resource for everything GitHub. The [Git Cheatsheet](http://github.com/github/training-materials/blob/master/downloads/github-git-cheat-sheet.pdf?raw=true) is also handy if you're the type that *learns by doing*.
 
 # Installing
 
@@ -63,4 +59,5 @@ All known issues are bagged and tagged on GitHub. Narrow your search by filterin
 
 # Additional Documentation
 
-> [Insert content here]
+* [GitHub Help](http://help.github.com)
+* [Git Cheatsheet](http://github.com/github/training-materials/blob/master/downloads/github-git-cheat-sheet.pdf?raw=true)
