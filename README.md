@@ -1,26 +1,26 @@
 
 
-
 ## Introduction
 
-Our project page uses a content-first boilerplate for writing web documents in Markdown. It's design is ideally for spinning up Jekyll-powered static websites on GitHub.
+Our project page uses a content-first framework for writing web documents in Markdown. It's design is ideal for spinning up Jekyll-powered static websites on GitHub.
 
 
 ### Benefits
 
-Unsatisfied with the capabilities of most boilerplates and frameworks, we took initiative and built a boilerplate that would satisfy a number of expectations.
+Unable to find a framework that satisfied all our essential needs, we took the initiative and built a better mouse trap that met the expectations of:
 
 * Writing content exclusively in Markdown
-* Relying on fast load times
+* Guaranteeing fast load times
 * Automating repetitive tasks
 * Expecting complete responsiveness without wrapping code in custom HTML selectors
 * Having a table of contents built automatically on each page
 * ~~Using one source file to serve configuration data to other components and pages~~
 * ~~Generating a configuration file instantly from the command line~~
 * Deploying minified or unminified JavaScript and CSS in production
-* Running the site locally on modern Windows OS platforms
+* Running a local instance of the site on modern Windows OS platforms
 * ~~Creating new Markdown pages on-the-fly from the command line~~
-* ~~Using zen mode to hide reading distractions and an inverted canvas for those that prefer the Darkside~~
+* ~~Hiding reading distractions
+* ~~Switching screen contrasts to help those that read better with a dark backdrop~~
 
 
 ### Features and Delighters
@@ -209,6 +209,10 @@ Unlike Alias tasks, Basic tasks perform a much smaller set of instructions. Only
 | Shell  | `grunt shell:bundler ` | Same as the alias task `grunt install` |
 
 ---
+
+## Updating Dependencies
+
+Dependencies for Grunt/Node are updated often by their original authors. To keep up with them, we add new dependency versions to `package.json`. Unfortunately, dependencies do not update themselves automatically. In order for you to install the latest versions, run `npm update`. 
 
 ## Directory Structure
 
