@@ -1,7 +1,7 @@
 ---
 layout: pages
 header: Getting Started
-intro: Learn quickly how to download and clone, install and configure, and search issues
+intro: Learn quickly how to download and clone, install, configure, and search issues
 baseurl: "../"
 ---
 
@@ -10,7 +10,7 @@ baseurl: "../"
 > [Insert content here]
 
 <summary class="message">
-For information about deployment, support, and compatibility, check out our [Developer's Guide]({{page.baseurl}}developers-guide).
+Looking for stuff like Deployment, Support, and Compatibility? You'll find those in our [Developer's Guide]({{page.baseurl}}developers-guide).
 </summary>
 
 # Specifications
@@ -41,7 +41,7 @@ git clone https://github.com/softlayer/softlayer-python.git
 git clone git@github.com:softlayer/softlayer-python.git
 ```
 
-Is the room starting to spin? Try [GitHub Help](http://help.github.com). It's a great resource for everything GitHub. The [Git Cheatsheet](http://github.com/github/training-materials/blob/master/downloads/github-git-cheat-sheet.pdf?raw=true) is also handy if you're the type that *learns by doing*.
+If all of this is making you head spin, try using [GitHub Help](http://help.github.com). It's a great resource for everything GitHub. The [Git Cheatsheet](http://github.com/github/training-materials/blob/master/downloads/github-git-cheat-sheet.pdf?raw=true) is also handy if you're the type that *learns by doing*.
 
 # Installing
 
@@ -54,7 +54,7 @@ Is the room starting to spin? Try [GitHub Help](http://help.github.com). It's a 
 
 # Known Issues
 
-All known issues are bagged and tagged on GitHub. Narrow your search by filtering for issues tagged with [CLI](https://github.com/softlayer/softlayer-python/issues?labels=CLI).
+All issues are bagged and tagged on GitHub. Narrow your search by clicking the [CLI](https://github.com/softlayer/softlayer-python/issues?labels=CLI) label.
 
 
 # Additional Documentation
