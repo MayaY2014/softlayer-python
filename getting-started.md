@@ -10,12 +10,14 @@ baseurl: "../"
 > [Insert content here]
 
 <summary class="message">
-Looking for stuff like Deployment, Support, and Compatibility? You'll find those in our [Developer's Guide]({{page.baseurl}}developers-guide).
+Looking for stuff like **Deployment**, **Support**, and **Compatibility**? You'll find those in our [Developer's Guide]({{page.baseurl}}developers-guide).
 </summary>
+
 
 # Specifications
 
 > [Insert content here]
+
 
 # Download and Clone
 
@@ -43,11 +45,13 @@ git clone git@github.com:softlayer/softlayer-python.git
 
 If all of this is making you head spin, try using [GitHub Help](http://help.github.com). It's a great resource for everything GitHub. The [Git Cheatsheet](http://github.com/github/training-materials/blob/master/downloads/github-git-cheat-sheet.pdf?raw=true) is also handy if you're the type that *learns by doing*.
 
-# Installing
+
+# Install
 
 > [Insert content here]
 
-## Configuring
+
+# Configure
 
 > [Insert content here]
 
