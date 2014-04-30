@@ -37,13 +37,13 @@ It has been the industry's standard dummy text ever since the 1500s.
 Contrary to popular belief, Lorem ipsum is not random text.
 </pre>
 
-<aside class="example">
+<summary class="panel">
 Lorem ipsum is simply dummy text of the printing and typesetting industry.
 
 Lorem ipsum has been the industry's standard dummy text ever since the 1500s.
 
 Contrary to popular belief, Lorem ipsum is not random text.
-</aside>
+</summary>
 
 
 # Text-level Semantics
