@@ -1,7 +1,7 @@
 ---
 layout: pages
 header: Developer's Guide
-intro: A starting point for those interested in getting elbow-deep in CLI code
+intro: The starting point for anyone ready to get elbow-deep in CLI code
 baseurl: "../"
 ---
 
