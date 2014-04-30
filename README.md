@@ -1,28 +1,26 @@
-## Work in Progress
 
-Development is currently carving out this branch for use with GitHub Pages.
 
 
 ## Introduction
 
-Our project page uses a content-first boilerplate for building web content with Markdown. It's designed ideally for spinning up Jekyll-powered static websites on GitHub.
+Our project page uses a content-first boilerplate for writing web documents in Markdown. It's design is ideally for spinning up Jekyll-powered static websites on GitHub.
 
 
-### Initiatives
+### Benefits
 
-Our vision for this boilerplate derived from a number of key initiatives.
+Unsatisfied with the capabilities of most boilerplates and frameworks, we took initiative and built a boilerplate that would satisfy a number of expectations.
 
-* Write content exclusively in Markdown
-* Rely on fast load times
-* Automate repetitive tasks
-* Expect complete responsiveness without wrapping code in custom HTML selectors
-* Have a table of contents built automatically on each page
-* ~~Use one source file to serve configuration data to other components and pages~~
-* ~~Generate your own configuration file instantly from the command line~~
-* Deploy minified or unminified JavaScript and CSS in production
-* Run the site locally on modern Windows OS platforms
-* ~~Create new Markdown pages on-the-fly from the command line~~
-* ~~Zen mode to hide reading distractions and an inverted canvas for those that prefer the Darkside~~
+* Writing content exclusively in Markdown
+* Relying on fast load times
+* Automating repetitive tasks
+* Expecting complete responsiveness without wrapping code in custom HTML selectors
+* Having a table of contents built automatically on each page
+* ~~Using one source file to serve configuration data to other components and pages~~
+* ~~Generating a configuration file instantly from the command line~~
+* Deploying minified or unminified JavaScript and CSS in production
+* Running the site locally on modern Windows OS platforms
+* ~~Creating new Markdown pages on-the-fly from the command line~~
+* ~~Using zen mode to hide reading distractions and an inverted canvas for those that prefer the Darkside~~
 
 
 ### Features and Delighters
