@@ -43,7 +43,7 @@ git clone https://github.com/softlayer/softlayer-python.git
 git clone git@github.com:softlayer/softlayer-python.git
 ```
 
-If all of this is making you head spin, try using [GitHub Help](http://help.github.com). It's a great resource for everything GitHub. The [Git Cheatsheet](http://github.com/github/training-materials/blob/master/downloads/github-git-cheat-sheet.pdf?raw=true) is also handy if you're the type that *learns by doing*.
+If all of this is making your head spin, check out [GitHub Help](http://help.github.com). It's a great resource for everything GitHub. The [Git Cheatsheet](http://github.com/github/training-materials/blob/master/downloads/github-git-cheat-sheet.pdf?raw=true) is also handy if you're the type that *learns by doing*.
 
 
 # Install
