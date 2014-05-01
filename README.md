@@ -1,5 +1,4 @@
 
-
 ## Introduction
 
 Our project page uses a content-first framework for writing web documents in Markdown. It's design is ideal for spinning up Jekyll-powered static websites on GitHub.
@@ -7,19 +6,19 @@ Our project page uses a content-first framework for writing web documents in Mar
 
 ### Benefits
 
-Unable to find a framework that satisfied all our essential needs, we took the initiative and built a better mouse trap that met the expectations of:
+Unable to find a framework that satisfied all our essential needs, we built a better mouse trap that met our expectations for:
 
 * Writing content exclusively in Markdown
 * Guaranteeing fast load times
 * Automating repetitive tasks
-* Expecting complete responsiveness without wrapping code in custom HTML selectors
-* Having a table of contents built automatically on each page
+* Embedding responsiveness in its core rather than wrapping code around elements to make it responsive
+* Having indexes/tables of content built automatically
 * ~~Using one source file to serve configuration data to other components and pages~~
 * ~~Generating a configuration file instantly from the command line~~
 * Deploying minified or unminified JavaScript and CSS in production
 * Running a local instance of the site on modern Windows OS platforms
-* ~~Creating new Markdown pages on-the-fly from the command line~~
-* ~~Hiding reading distractions
+* ~~Creating new Markdown pages instantly from the command line~~
+* ~~Hiding reading distractions~~
 * ~~Switching screen contrasts to help those that read better with a dark backdrop~~
 
 
@@ -29,7 +28,7 @@ Unable to find a framework that satisfied all our essential needs, we took the i
 * [Grunt](http://gruntjs.com "Grunt") automation for handling repetitive tasks
 * Markdown-compatibility and rendering with [Redcarpet](http://github.com/vmg/redcarpet "Redcarpet")
 * ~~Code highlighting with [Rouge](http://rouge.jayferd.us/demo "Rouge") using [Manni](http://richleland.github.io/pygments-css) pygments~~
-* Code highlighting with [Pygments](http://pygments.org "Pygments") using [Manni](http://richleland.github.io/pygments-css)-styled pygments
+* Code highlighting with [Pygments](http://pygments.org "Pygments") using the [Manni](http://richleland.github.io/pygments-css) theme
 * Base HTML5
 * Responsive grid and MQs from [Bootstrap](http://twitter.github.io/bootstrap "Twitter Bootstrap")
 * ~~[Modernizr](http://modernizr.com "Modernizr") polyfills for cross-browser support~~
@@ -39,22 +38,22 @@ Unable to find a framework that satisfied all our essential needs, we took the i
 * [jQuery](http://jquery.com "jQuery")
 * Pretty URLs
 * Google's [Universal Analytics](http://www.google.com/analytics) snippet with the ability to [track page scrolls](https://github.com/h5bp/html5-boilerplate/blob/master/doc/extend.md#google-universal-analytics)
-* [Noto Sans](http://www.google.com/fonts/specimen/Noto+Sans) font from Google Fonts
+* [Noto Sans](http://www.google.com/fonts/specimen/Noto+Sans) font for headings and titles
 * [Normalize](http://necolas.github.com/normalize.css) for CSS normalizations and resets
 * Scripts built with [CoffeeScript](http://coffeescript.org "CoffeeScript") and transpiled into JavaScript
 * [LESS](http://lesscss.org "LESS") dynamic stylesheets for variables, mixins, nesting, and more
 * Shopify's [Liquid](http://liquidmarkup.org "Liquid") templating language
-* [Minimal-UI viewport](http://github.com/h5bp/html5-boilerplate/blob/master/doc/extend.md#web-apps) meta tag for iOS 7.1+
+* [Minimal-UI viewport](http://github.com/h5bp/html5-boilerplate/blob/master/doc/extend.md#web-apps) support for iOS 7.1+
 * ~~Improved HTML5 accessibility for screen readers~~
 
 
 ### Baked-in Automation
 
-We're big proponents of the DRY (don't repeat yourself) principle. That's why automation became a distinct competency for this project. The more automation there is, the less repetitive work you have (and hopefully the less mistakes you make).
+We're big proponents of the DRY (don't repeat yourself) principle. That's why automation became such an important competency for this project. After all, the more automation there is, the less repetitive work you have (and hopefully the less mistakes you make).
 
 Aside from [Grunt](http://gruntjs.com "Grunt"), we baked in a few automated tasks of our own.
 
-* Create menu links automatically when new pages are added
+* Create links in the menu when new pages are added
 * Dynamically build the subnav's table of contents
 * Enable or disable Google Analytics
 * Pull in statistical data from GitHub
@@ -64,9 +63,9 @@ Aside from [Grunt](http://gruntjs.com "Grunt"), we baked in a few automated task
 
 ## Prerequisites
 
-Our boilerplate requires these minimum versions for Ruby, Python, and Node. Click the links below to get download and installation instructions for your OS.
+Our framework requires the minimum versions below for Ruby, Python, and Node. Click the links to get download and installation docs for your OS.
 
-__Windows users:__ Check out Yi Zeng's ["Setup Jekyll on Windows" article](http://yizeng.me/2013/05/10/setup-jekyll-on-windows "Setup Jekyll on Windows") before installing.
+__Windows users:__ Read through Yi Zeng's ["Setup Jekyll on Windows" article](http://yizeng.me/2013/05/10/setup-jekyll-on-windows "Setup Jekyll on Windows") before starting your install. It will save you a ton of time and agony.
 
 * [Ruby v1.9.3](http://www.ruby-lang.org/en/installation)
 * [Python v2.7.5](http://www.python.org/download) (see note)
@@ -78,7 +77,7 @@ Note: Pygments v1.6 is not compatible with Python 3. __You must have Python 2 in
 
 ## Getting Started
 
-1. Verify __Ruby__, __Python__ and __Node__ are installed (see Prerequisites for supported versions)
+1. Verify __Ruby__, __Python__ and __Node__ are installed (see [Prerequisites](#prerequisites) for supported versions)
 
         # each command returns a version number if it's installed
         ruby -v
