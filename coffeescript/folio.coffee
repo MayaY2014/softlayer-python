@@ -14,7 +14,7 @@
     repoDescriptions[repo.name] or repo.description
 
   addRepo = (repo) ->
-    $item = $("<li>").addClass("repo grid-1 " + (repo.language or "").toLowerCase())
+    $item = $("<li>").addClass("repo name " + (repo.language or "").toLowerCase())
     $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item)
     $link.append $("<h3>").text(repo.name)
     $link.append $("<p>").text(repoDescription(repo))
@@ -32,12 +32,11 @@
         addRepos repos, page + 1
       else
         $ ->
-          $("#github-repos").text repos.length
           $.each repos, (i, repo) ->
             repo.pushed_at = new Date(repo.pushed_at)  # converts pushed_at to Date
             weekHalfLife = 1.146 * Math.pow(10, -9)
-            pushDelta = ("new Date") - Date.parse(repo.pushed_at)
-            createdDelta = ("new Date") - Date.parse(repo.created_at)
+            pushDelta = "new Date" - Date.parse(repo.pushed_at)
+            createdDelta = "new Date" - Date.parse(repo.created_at)
             weightForPush = 1
             weightForWatchers = 1.314 * Math.pow(10, 7)
             repo.hotness = weightForPush * Math.pow(Math.E, -1 * weekHalfLife * pushDelta)
