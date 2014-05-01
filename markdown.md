@@ -37,13 +37,13 @@ It has been the industry's standard dummy text ever since the 1500s.
 Contrary to popular belief, Lorem ipsum is not random text.
 </pre>
 
-<summary class="panel">
+<aside class="panel">
 Lorem ipsum is simply dummy text of the printing and typesetting industry.
 
 Lorem ipsum has been the industry's standard dummy text ever since the 1500s.
 
 Contrary to popular belief, Lorem ipsum is not random text.
-</summary>
+</aside>
 
 
 # Text-level Semantics
@@ -65,7 +65,7 @@ Place two asterisks `**` or two underscores `__` at both ends of your content.
 Lorem ipsum is **simply dummy text** of the printing and typesetting industry. It has been the industry's standard dummy text __ever since the 1500s__.
 </pre>
 
-<aside class="example">
+<aside class="panel">
 Lorem ipsum is **simply dummy text** of the printing and typesetting industry. It has been the industry's standard dummy text __ever since the 1500s__.
 </aside>
 
@@ -77,7 +77,7 @@ Place one asterisk `*` at both ends of your content.
 Lorem ipsum is simply dummy text of the *printing* and *typesetting* industry.
 </pre>
 
-<aside class="example">
+<aside class="panel">
 Lorem ipsum is simply dummy text of the *printing* and *typesetting* industry.
 </aside>
 
@@ -89,7 +89,7 @@ Mixing bold and italic styles is not complicated. The trick to it is using the u
 __Lorem ipsum is *simply dummy text*__ of the printing and typesetting industry. It has been the industry's standard *dummy text __ever since the 1500s__*.
 </pre>
 
-<aside class="example">
+<aside class="panel">
 __Lorem ipsum is *simply dummy text*__ of the printing and typesetting industry. It has been the industry's standard *dummy text __ever since the 1500s__*.
 </aside>
 
@@ -101,7 +101,7 @@ Place one underscore `_` at both ends of your content.
 Lorem ipsum is simply dummy text of the _printing and typesetting industry_.
 </pre>
 
-<aside class="example">
+<aside class="panel">
 Lorem ipsum is simply dummy text of the _printing and typesetting industry_.
 </aside>
 
@@ -113,7 +113,7 @@ Place two tildes `~~` at both ends of your content.
 Lorem ipsum is ~~simply~~ dummy text of the ~~printing and~~ typesetting industry.
 </pre>
 
-<aside class="example">
+<aside class="panel">
 Lorem ipsum is ~~simply~~ dummy text of the ~~printing and~~ typesetting industry.
 </aside>
 
@@ -125,7 +125,7 @@ Put one caret `^` before **each** word.
 Lorem ipsum^[1] is simply dummy text of the printing and typesetting industry^[Citation ^needed].
 </pre>
 
-<aside class="example">
+<aside class="panel">
 Lorem ipsum^[1] is simply dummy text of the printing and typesetting industry^[Citation ^needed].
 </aside>
 
@@ -146,7 +146,7 @@ Use three hyphens `---` to make an em dash.
 Lorem ipsum --- dummy text of the printing and typesetting industry.
 </pre>
 
-<aside class="example">
+<aside class="panel">
 Lorem ipsum --- dummy text of the printing and typesetting industry.
 </aside>
 
@@ -158,7 +158,7 @@ Use two hyphens `--` to make an en dash.
 Lorem ipsum -- dummy text of the printing and typesetting industry.
 </pre>
 
-<aside class="example">
+<aside class="panel">
 Lorem ipsum -- dummy text of the printing and typesetting industry.
 </aside>
 
@@ -180,7 +180,7 @@ Underscores
 ___
 </pre>
 
-<aside class="example">
+<aside class="panel">
 Hyphens
 
 ---
@@ -307,7 +307,7 @@ Hover over [this link](http://www.softlayer.com "SoftLayer, an IBM Company") to 
 [Read our license on GitHub](../blob/master/LICENSE)
 </pre>
 
-<aside class="example">
+<aside class="panel">
 [Visit our website](http://www.softlayer.com)
 
 Hover over [this link](http://www.softlayer.com "SoftLayer, an IBM Company") to see the title
@@ -322,7 +322,7 @@ Emulate a direct link without any specific words by putting angle brackets `<>` 
 `<http://www.softlayer.com>`<br>
 `<howdy@softlayer.com>`
 
-<aside class="example">
+<aside class="panel">
 Visit our website at <http://www.softlayer.com>
 
 Email <howdy@softlayer.com> to get a quote
@@ -342,7 +342,7 @@ Links and images use similar formats except:
 ![Company Logo](http://static.softlayer.com/images/info/sl_logo_215x19.jpg "SoftLayer, an IBM Company")
 </pre>
 
-<aside class="example">
+<aside class="panel">
 
 ![Company Logo](http://static.softlayer.com/images/info/sl_logo_215x19.jpg "SoftLayer, an IBM Company")
 
@@ -354,7 +354,7 @@ Links and images use similar formats except:
 ![](http://static.softlayer.com/images/info/sl_logo_215x19.jpg "SoftLayer, an IBM Company")
 </pre>
 
-<aside class="example">
+<aside class="panel">
 
 ![](http://static.softlayer.com/images/info/sl_logo_215x19.jpg "SoftLayer, an IBM Company")
 
@@ -398,7 +398,7 @@ if ($this.parent('li').hasClass('active')) return
 ```
 </pre>
 
-<aside class="example">
+<aside class="panel">
 
 ```
 if (!selector) {
@@ -450,7 +450,7 @@ class TkFrame
 ```
 </pre>
 
-<aside class="example">
+<aside class="panel">
 
 ```ruby
 class TwoLabs < TkFrame
@@ -495,7 +495,7 @@ class TokensV2(object):
 ```
 </pre>
 
-<aside class="example">
+<aside class="panel">
 
 ```python
 from datetime import datetime
@@ -580,6 +580,6 @@ Here's how to add a video from YouTube.
 [![Lefties](http://img.youtube.com/vi/1TUTwdOvAVM/0.jpg)](http://www.youtube.com/watch?v=1TUTwdOvAVM)
 </pre>
 
-<aside class="example">
+<aside class="panel">
 [![Lefties](http://img.youtube.com/vi/1TUTwdOvAVM/0.jpg)](http://www.youtube.com/watch?v=1TUTwdOvAVM)
 </aside>
