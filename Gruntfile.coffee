@@ -64,6 +64,7 @@ module.exports = (grunt) ->
           "<%= coffee.cache.dest %>tocify.js"
           "<%= coffee.cache.dest %>metrics.js"
           "<%= coffee.cache.dest %>folio.js"
+          "<%= coffee.cache.dest %>zen.js"
         ]
         dest: "public/js/main.js"
 
