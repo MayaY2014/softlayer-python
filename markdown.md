@@ -1,7 +1,7 @@
 ---
 layout: pages
 header: Markdown
-intro: Get out of writing fancy code with this editor-agnostic language
+intro: Get out of writing fancy code with this humanistic, editor-friendly language
 baseurl: "../"
 ---
 
@@ -15,12 +15,9 @@ Another definition for Markdown is [syntactic sugar](http://en.wikipedia.org/wik
 
 In short, Jekyll runs your content through the ringer and spits out stylized HTML pages. And since it doesn't mess with your original content, you never have to touch HTML --- Jekyll automatically creates new HTML pages whenever you update your content.
 
-## Markdown editors
+## Prose.io
 
-Two editors have stood out consistently in regards to performance, simplicity, and practicality. If you’re concerned about losing precious time using unreliable editors, checking out either one of these will certainly be worth the effort.
-
-* [Prose.io](http://prose.io) --- A content editor for GitHub designed for managing websites
-* [Markable.in](http://markable.in) --- A remarkable online Markdown editor
+One content editor has stood out consistently with performance, simplicity, and practicality. If you’re rummaging around the web for a reliable content editor, include [Prose.io](http://prose.io) in your search. Prose.io is designed specially for managing and editing Markdown content on GitHub, although you can edit much more than that.
 
 
 # Paragraphs
