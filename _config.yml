@@ -44,7 +44,6 @@ markdown:         redcarpet
 redcarpet:
   extensions:     [ "autolink",
                     "fenced_code_blocks",
-                    "lax_spacing",
                     "smart",
                     "strikethrough",
                     "superscript",
