@@ -14,17 +14,18 @@ project:
   name:           SoftLayer CLI
   tagline:        Put your resources to work effortlessly from the command line # or "Manage your virtual resources promptly from the command line"
   www:            http://softlayer.github.io/softlayer-python
-  version:        0.3.0  # This is the boilerplate version, not the product version
+  version:        0.3.0  # This is the framework version, not the product version
 
 # ==============================
 # Owner (or Business)
 # ==============================
 
 owner:
-  name:           "SoftLayer, an IBM Company"  # wrap in quotes if punctuation is present in the name
+  name:           "SoftLayer, an IBM Company"  # wrap in quotes if punctuation is used in the name
   www:            http://www.softlayer.com
   blog:           http://sldn.softlayer.com/blog
   twitter:        SoftLayerDevs
+  freenode:       #softlayer
 
 # ==============================
 # License
