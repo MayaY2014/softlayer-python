@@ -1,4 +1,3 @@
-
 ## Introduction
 
 Our project page uses a content-first framework for writing web documents in Markdown. It's design is ideal for spinning up Jekyll-powered static websites on GitHub.
@@ -6,7 +5,7 @@ Our project page uses a content-first framework for writing web documents in Mar
 
 ### Benefits
 
-Unable to find a framework that satisfied all our essential needs, we built a better mouse trap that met our expectations for:
+Unable to find a framework agnostic enough for both readers and writers, we began development on our own. The overarching intent for this framework includes:
 
 * Writing content exclusively in Markdown
 * Guaranteeing fast load times
@@ -27,14 +26,11 @@ Unable to find a framework that satisfied all our essential needs, we built a be
 * Free web hosting on GitHub with [Jekyll](http://jekyllrb.com "Jekyll")
 * [Grunt](http://gruntjs.com "Grunt") automation for handling repetitive tasks
 * Markdown-compatibility and rendering with [Redcarpet](http://github.com/vmg/redcarpet "Redcarpet")
-* ~~Code highlighting with [Rouge](http://rouge.jayferd.us/demo "Rouge") using [Manni](http://richleland.github.io/pygments-css) pygments~~
 * Code highlighting with [Pygments](http://pygments.org "Pygments") using the [Manni](http://richleland.github.io/pygments-css) theme
 * Base HTML5
 * Responsive grid and MQs from [Bootstrap](http://twitter.github.io/bootstrap "Twitter Bootstrap")
-* ~~[Modernizr](http://modernizr.com "Modernizr") polyfills for cross-browser support~~
 * [html5shiv](http://en.wikipedia.org/wiki/HTML5_Shiv "html5shiv") enabling script for legacy IE compatibility
 * [Font Awesome](http://fortawesome.github.io/Font-Awesome "Font Awesome") iconic font
-* ~~[Designmodo Flat UI](http://designmodo.com/flat-free "Designmodo") icons~~
 * [jQuery](http://jquery.com "jQuery")
 * Pretty URLs
 * Google's [Universal Analytics](http://www.google.com/analytics) snippet with the ability to [track page scrolls](https://github.com/h5bp/html5-boilerplate/blob/master/doc/extend.md#google-universal-analytics)
@@ -44,7 +40,6 @@ Unable to find a framework that satisfied all our essential needs, we built a be
 * [LESS](http://lesscss.org "LESS") dynamic stylesheets for variables, mixins, nesting, and more
 * Shopify's [Liquid](http://liquidmarkup.org "Liquid") templating language
 * [Minimal-UI viewport](http://github.com/h5bp/html5-boilerplate/blob/master/doc/extend.md#web-apps) support for iOS 7.1+
-* ~~Improved HTML5 accessibility for screen readers~~
 
 
 ### Baked-in Automation
