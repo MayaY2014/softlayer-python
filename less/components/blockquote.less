@@ -44,3 +44,25 @@ blockquote {
     }
   }
 }
+
+// Message 
+// -------------------------
+
+.message {
+  padding: @message-padding;
+  border: 1px solid transparent;
+  border-radius: @border-radius-normal;
+  background-color: @message-bg;
+  color: @message-color;
+
+  > p,
+  > ul {
+    margin-bottom: 0;
+  }
+
+  > a {
+    color: inherit;
+    border-bottom: 1px dotted @message-color;
+    padding-bottom: 0.05em;
+  }
+}
