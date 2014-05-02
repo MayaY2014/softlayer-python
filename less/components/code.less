@@ -11,7 +11,7 @@ pre {
 // -------------------------
 
 code {
-  padding: 1px 4px;
+  padding: @code-padding;
   border: 1px solid @code-border;
   border-radius: 1px;
   background-color: @code-bg;
@@ -28,7 +28,7 @@ pre {
   display: block;
   overflow: auto;
   margin: 20px 0 20px 5px;
-  padding: 14px;
+  padding: @pre-padding;
   border: 1px solid @pre-border-color;
   border-radius: 0;
   background-color: @pre-bg;
@@ -58,10 +58,10 @@ pre {
 output {
   display: block;
   margin: -10px 0 20px;
-  border: @lighter6 solid 1px;
+  border: 1px solid @output-border-color;
   border-radius: @border-radius-large;
-  background-color: @lighter8;
-  color: @lighter3;
+  background-color: @output-bg;
+  color: @output-color;
   font-size: @font-size-small;
   line-height: @line-height-normal;
 }

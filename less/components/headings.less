@@ -4,14 +4,14 @@
 
 h1, .h1 {
   margin: (floor(@font-size-h1 * @heading-margin)) 0 5px;
-  letter-spacing: -.04em;
+  letter-spacing: @letter-spacing-large;
   font-weight: @font-weight-normal;
   font-size: @font-size-h1;
 }
 
 h2, .h2 {
   margin: (ceil(@font-size-h2 * @heading-margin)) 0 4px;
-  letter-spacing: -.02em;
+  letter-spacing: @letter-spacing-normal;
   font-weight: @font-weight-bold;
   font-size: @font-size-h2;
 }
