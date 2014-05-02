@@ -45,7 +45,7 @@ Contrary to popular belief, Lorem ipsum is not random text.
 
 # Text-level Semantics
 
-With Markdown, you can add these common effects to your content:
+With Markdown, you can add these text effects to your content.
 
 * [Bold](#toc_5)
 * [Italic](#toc_6)
