@@ -1,7 +1,7 @@
 ---
 layout: pages
 header: Getting Started
-intro: Learn quickly how to download and clone, install, configure, and search issues
+intro: Everything you wanted to know about downloading and cloning, installing, searching issues, and more
 baseurl: "../"
 ---
 
