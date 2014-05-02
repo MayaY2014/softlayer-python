@@ -15,7 +15,7 @@
 
   addRepo = (repo) ->
     $item = $("<li>").addClass("repo name " + (repo.language or "").toLowerCase())
-    $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item)
+    $link = $("<a>").attr("href", repoUrl(repo), "target":"_blank").appendTo($item)
     $link.append $("<h2>").text(repo.name)
     $link.append $("<p>").text(repoDescription(repo))
     $link.append $("<h4>").text(repo.language)
