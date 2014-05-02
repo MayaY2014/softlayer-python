@@ -9,13 +9,13 @@
 
 # Enables smooth scrolling and content pinning for boilerplate's subnav
 
-$("#sidebar").affix offset:
+$(".subnav").affix offset:
   top: 235
 
 $body = $(document.body)
-navHeight = $(".navbar").outerHeight(true) + 10
+navHeight = $("#page-content").outerHeight(true) + 10
 $body.scrollspy
-  target: "#leftCol"
+  target: ".tocify"
   offset: navHeight
 
 # Scrolling sections
@@ -47,7 +47,7 @@ $("a[href*=#]:not([href=#])").click ->
     process = $.proxy(@process, this)
     @$element = (if $(element).is("body") then $(window) else $(element))
     @$body = $("body")
-    @$scrollElement = @$element.on("scroll.bs.scrollspy", process)
+    @$scrollElement = @$element.on("scroll.scrollspy", process)
     @options = $.extend({}, ScrollSpy.DEFAULTS, options)
     #strip for ie7
     @selector = (@options.target or ((href = $(element).attr("href")) and href.replace(/.*(?=#[^\s]+$)/, "")) or "") + " .nav li > a"
@@ -112,9 +112,9 @@ $("a[href*=#]:not([href=#])").click ->
   $.fn.scrollspy = (option) ->
     @each ->
       $this = $(this)
-      data = $this.data("bs.scrollspy")
+      data = $this.data("scrollspy")
       options = typeof option is "object" and option
-      $this.data "bs.scrollspy", (data = new ScrollSpy(this, options))  unless data
+      $this.data "scrollspy", (data = new ScrollSpy(this, options))  unless data
       data[option]()  if typeof option is "string"
       return
 
@@ -130,7 +130,7 @@ $("a[href*=#]:not([href=#])").click ->
 
   # SCROLLSPY DATA-API
   # ==================
-  $(window).on "load.bs.scrollspy.data-api", ->
+  $(window).on "load.scrollspy.data-api", ->
     $("[data-spy=\"scroll\"]").each ->
       $spy = $(this)
       $spy.scrollspy $spy.data()
@@ -155,7 +155,7 @@ $("a[href*=#]:not([href=#])").click ->
   # ======================
   Affix = (element, options) ->
     @options = $.extend({}, Affix.DEFAULTS, options)
-    @$window = $(window).on("scroll.bs.affix.data-api", $.proxy(@checkPosition, this)).on("click.bs.affix.data-api", $.proxy(@checkPositionWithEventLoop, this))
+    @$window = $(window).on("scroll.affix.data-api", $.proxy(@checkPosition, this)).on("click.affix.data-api", $.proxy(@checkPositionWithEventLoop, this))
     @$element = $(element)
     @affixed = @unpin = @pinnedOffset = null
     @checkPosition()
@@ -190,7 +190,7 @@ $("a[href*=#]:not([href=#])").click ->
     return  if @affixed is affix
     @$element.css "top", ""  if @unpin isnt null
     affixType = "affix" + ((if affix then "-" + affix else ""))
-    e = $.Event(affixType + ".bs.affix")
+    e = $.Event(affixType + ".affix")
     @$element.trigger e
     return  if e.isDefaultPrevented()
     @affixed = affix
@@ -206,9 +206,9 @@ $("a[href*=#]:not([href=#])").click ->
   $.fn.affix = (option) ->
     @each ->
       $this = $(this)
-      data = $this.data("bs.affix")
+      data = $this.data("affix")
       options = typeof option is "object" and option
-      $this.data "bs.affix", (data = new Affix(this, options))  unless data
+      $this.data "affix", (data = new Affix(this, options))  unless data
       data[option]()  if typeof option is "string"
       return
 
