@@ -28,9 +28,6 @@ $.ajax
 
     numWatchers = json.data  # Watchers
     $("#github-watchers").text numWatchers.subscribers_count
-
-    numFollowers = (numWatchers + numStargazers)
-    $("github-followers").text numFollowers.length
     return
 
 # Tags (number for last release/tag)
