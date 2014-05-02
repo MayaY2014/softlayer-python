@@ -150,26 +150,23 @@ i#banner {
   padding: 80px 0;
 }
 
-.project {
-  .name {
-    width: 220px;
-    display: inline;
-    float: left;
-    position: relative;
-    margin: 15px 5px;
-    border-bottom-width: 2px;
-  }
-}
-
 ol#repos {
   margin: 0;
   padding: 0;
 }
 
-.folio {
+.project .name {
+  width: 220px;
+  display: inline;
+  float: left;
+  position: relative;
+  margin: 15px 5px;
+  border-bottom-width: 2.5px;
+}
+
 .repo {
   border-radius: 5px;
-  border: 1px solid @lighter7;
+  border: 1px solid @lighter6;
   background: @white;
   height: 260px;
 
@@ -179,10 +176,11 @@ ol#repos {
     height: 100%;
     color: inherit;
     border-bottom: 0;
+  }
 
-    > h4,
-    > h5,
-    > h6 {
+  h4,
+  h5,
+  h6 {
     position: absolute;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -190,65 +188,62 @@ ol#repos {
     bottom: 0;
     overflow: hidden;
     width: 100%;
-    color: @lighter4;
+    color: @lighter3;
     font-weight: @font-weight-normal;
-    font-size: 11px;
+    font-size: 11.5px;
   }
 
-  > h2,
-  > h4,
-  > p {
+  h2,
+  h4,
+  p {
     text-align: left;
   }
 
-  > h5,
-  > h6 {
+  h5,
+  h6 {
     text-align: right;
   }
 
-  > h2 {
-    font-size: 21px;
+  h2 {
+    font-size: 23px;
     color: @lighter3;
     line-height: 1.1818;
-    font-weight: @font-weight-light;
+    font-weight: @font-weight-normal;
     border-bottom: 1px solid @lighter6;
     padding: 12px 20px;
     margin-top: 0;
-    letter-spacing: -.01em;
+    letter-spacing: -.04em;
   }
 
-  > h4 {
+  h4 {
     padding: 15px 25px 25px 20px;
-    background-color: @lighter8;
+    background-color: @lighter7;
   }
 
-  > h5 {
-    padding: 15px 45px 25px 0;
+  h5 {
+    padding: 15px 45px 23px 0;
+    &:before {
+      padding-right: 3px;
+      content: "\f005";
+      font-family: FontAwesome;
+    }
   }
 
-  > h5:before {
-    padding-right: 3px;
-    content: "\f005";
-    font-family: FontAwesome;
-  }
-
-  > h6 {
+  h6 {
     padding: 15px 15px 23px 0;
+    &:before {
+      padding-right: 3px;
+      content: "\f126";
+      font-family: FontAwesome;
+    }
   }
 
-  > h6:before {
-    padding-right: 3px;
-    content: "\f126";
-    font-family: FontAwesome;
-  }
-
-  > p {
+  p {
     color: @lighter3;
     font-size: 13.5px;
     margin: 10px 10px 20px 20px;
+    font-family: @font-family-sans;
   }
-}
-}
 }
 
 .repo.name.c {

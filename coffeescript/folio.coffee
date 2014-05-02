@@ -16,9 +16,11 @@
   addRepo = (repo) ->
     $item = $("<li>").addClass("repo name " + (repo.language or "").toLowerCase())
     $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item)
-    $link.append $("<h3>").text(repo.name)
+    $link.append $("<h2>").text(repo.name)
     $link.append $("<p>").text(repoDescription(repo))
     $link.append $("<h4>").text(repo.language)
+    $link.append $("<h5>").text(repo.watchers)
+    $link.append $("<h6>").text(repo.forks)
     $item.appendTo "#repos"
     return
 
