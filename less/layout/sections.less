@@ -14,21 +14,21 @@ section {
   padding: 50px 0;
   width: 100%;
   height: auto;
-  background-color: @black;
-  color: @white;
+  background-color: @hero-bg;
+  color: @hero-color;
 }
 
 .hero-name {
   margin: 50px 0 0;
-  color: @white;
+  color: @hero-color;
   font-weight: @font-weight-bold;
   font-size: 39px;
 }
 
 .hero-tagline {
   margin: 5px 0 12px;
-  color: @lighter8;
-  letter-spacing: -.02em;
+  color: @hero-tagline-color;
+  letter-spacing: @letter-spacing-normal;
   font-weight: @font-weight-light;
   font-size: 23px;
   line-height: 1.1818;
@@ -47,8 +47,8 @@ section {
 .hero-version {
   p {
     margin: 22px 0 0;
-    color: @lighter5;
-    letter-spacing: -.002em;
+    color: @hero-version-color;
+    letter-spacing: @letter-spacing-normal;
     font-size: 14px;
   }
 }
@@ -60,7 +60,6 @@ section {
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../../public/images/featured-bg.jpg");
     background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../../public/images/featured-bg.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../../public/images/featured-bg.jpg");
-    background-color: @black;
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
@@ -86,8 +85,8 @@ section {
 .banner {
   width: 100%;
   height: auto;
-  background-color: @white;
-  color: @lighter4;
+  background-color: @banner-bg;
+  color: @banner-color;
   transition-duration: .5s;
   transition-property: all;
 
@@ -97,7 +96,7 @@ section {
     font-weight: @font-weight-normal !important;
     font-size: 25px;
     line-height: @line-height-xsmall;
-    letter-spacing: -.04em;
+    letter-spacing: @letter-spacing-large;
   }
 
   p {
@@ -127,7 +126,7 @@ section {
 
 i#banner {
   font-size: 158px;
-  color: @lighter4;
+  color: @banner-icons;
 }
 
 // Tagline
@@ -135,10 +134,11 @@ i#banner {
 
 .tagline {
   padding: 50px 0;
+  background-color: @tagline-bg;
 
   h1 {
-    color: @lighter4;
-    font-size: 40px;
+    color: @tagline-color;
+    font-size: 36px;
   }
 }
 
@@ -166,8 +166,8 @@ ol#repos {
 
 .repo {
   border-radius: 5px;
-  border: 1px solid @lighter6;
-  background: @white;
+  border: 1px solid @folio-repo-border;
+  background: @folio-repo-bg;
   height: 260px;
 
   > a {
@@ -181,6 +181,7 @@ ol#repos {
   h4,
   h5,
   h6 {
+    color: @folio-repo-footer-color;
     position: absolute;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -188,7 +189,6 @@ ol#repos {
     bottom: 0;
     overflow: hidden;
     width: 100%;
-    color: @lighter3;
     font-weight: @font-weight-normal;
     font-size: 11.5px;
   }
@@ -205,19 +205,19 @@ ol#repos {
   }
 
   h2 {
+    color: @folio-repo-header-color;
     font-size: 23px;
-    color: @lighter3;
     line-height: 1.1818;
     font-weight: @font-weight-normal;
-    border-bottom: 1px solid @lighter6;
+    border-bottom: 1px solid @folio-repo-border;
     padding: 12px 20px;
     margin-top: 0;
-    letter-spacing: -.04em;
+    letter-spacing: @letter-spacing-large;
   }
 
   h4 {
     padding: 15px 25px 25px 20px;
-    background-color: @lighter7;
+    background-color: @folio-repo-footer-bg;
   }
 
   h5 {
@@ -239,7 +239,7 @@ ol#repos {
   }
 
   p {
-    color: @lighter3;
+    color: @folio-repo-color;
     font-size: 13.5px;
     margin: 10px 10px 20px 20px;
     font-family: @font-family-sans;
