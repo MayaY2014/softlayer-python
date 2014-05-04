@@ -12,6 +12,7 @@
 
 project:
   name:           SoftLayer CLI
+  alias:          Python Bindings
   tagline:        Put your resources to work effortlessly from the command line # or "Manage your virtual resources promptly from the command line"
   www:            http://softlayer.github.io/softlayer-python
   version:        0.3.0  # This is the framework version, not the product version
