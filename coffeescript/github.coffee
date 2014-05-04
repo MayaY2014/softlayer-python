@@ -1,5 +1,5 @@
 #
-# * Metrics
+# * Github
 # * Fetches payloads and showcases contributors, stargazers, watchers, and tags
 # *
 # * Copyright (c) 2014 SoftLayer, an IBM Company

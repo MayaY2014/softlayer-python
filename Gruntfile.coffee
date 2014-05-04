@@ -60,10 +60,10 @@ module.exports = (grunt) ->
           banner: "<%= banner %>"
         src: [
           "<%= coffee.cache.dest %>unclassy.js"
-          "<%= coffee.cache.dest %>lateral.js"
+          "<%= coffee.cache.dest %>navigate.js"
           "<%= coffee.cache.dest %>tocify.js"
-          "<%= coffee.cache.dest %>metrics.js"
-          "<%= coffee.cache.dest %>folio.js"
+          "<%= coffee.cache.dest %>github.js"
+          "<%= coffee.cache.dest %>profile.js"
         ]
         dest: "public/js/main.js"
 

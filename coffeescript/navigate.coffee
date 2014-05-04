@@ -1,5 +1,5 @@
 #
-# * Lateral
+# * Navigate
 # * On-page scrollability and sliding maneuverability
 # *
 # * Copyright (c) 2014 SoftLayer, an IBM Company

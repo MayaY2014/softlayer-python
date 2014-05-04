@@ -1,6 +1,6 @@
 #
-# * Folio
-# * Swimlane-like view to showcase GitHub repo information
+# * Profile
+# * Panel-like view to showcase GitHub profile and repo information
 # *
 # * Copyright (c) 2014 SoftLayer, an IBM Company
 # * Released under the MIT license
