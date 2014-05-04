@@ -14,7 +14,7 @@ module.exports = (grunt) ->
     banner: "/*!\n" +
             " * \n" +
             " * <%= site.project.name %>\n" +
-            " * Boilerplate version <%= site.project.version %>, Built on <%= grunt.template.today(\"mm-dd-yyyy\") %>\n" +
+            " * Framework version <%= site.project.version %>, Built on <%= grunt.template.today(\"mm-dd-yyyy\") %>\n" +
             " * Copyright (c) <%= grunt.template.today(\"yyyy\") %> <%= site.owner.name %>. All rights reserved.\n" +
             " * Code and documentation licensed under <%= site.license.type %>.\n" +
             " * \n" +
@@ -64,7 +64,6 @@ module.exports = (grunt) ->
           "<%= coffee.cache.dest %>tocify.js"
           "<%= coffee.cache.dest %>metrics.js"
           "<%= coffee.cache.dest %>folio.js"
-          "<%= coffee.cache.dest %>zen.js"
         ]
         dest: "public/js/main.js"
 
