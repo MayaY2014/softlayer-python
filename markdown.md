@@ -34,13 +34,15 @@ It has been the industry's standard dummy text ever since the 1500s.
 Contrary to popular belief, Lorem ipsum is not random text.
 </pre>
 
-<aside class="panel">
+<summary class="panel">
+
 Lorem ipsum is simply dummy text of the printing and typesetting industry.
 
 Lorem ipsum has been the industry's standard dummy text ever since the 1500s.
 
 Contrary to popular belief, Lorem ipsum is not random text.
-</aside>
+
+</summary>
 
 
 # Text-level Semantics
@@ -62,9 +64,11 @@ Place two asterisks `**` or two underscores `__` at both ends of your content.
 Lorem ipsum is **simply dummy text** of the printing and typesetting industry. It has been the industry's standard dummy text __ever since the 1500s__.
 </pre>
 
-<aside class="panel">
+<summary class="panel">
+
 Lorem ipsum is **simply dummy text** of the printing and typesetting industry. It has been the industry's standard dummy text __ever since the 1500s__.
-</aside>
+
+</summary>
 
 ## Italic
 
@@ -74,9 +78,11 @@ Place one asterisk `*` at both ends of your content.
 Lorem ipsum is simply dummy text of the *printing* and *typesetting* industry.
 </pre>
 
-<aside class="panel">
+<summary class="panel">
+
 Lorem ipsum is simply dummy text of the *printing* and *typesetting* industry.
-</aside>
+
+</summary>
 
 ## Bold and italic
 
@@ -86,9 +92,11 @@ Mixing bold and italic styles is not complicated. The trick to it is using the u
 __Lorem ipsum is *simply dummy text*__ of the printing and typesetting industry. It has been the industry's standard *dummy text __ever since the 1500s__*.
 </pre>
 
-<aside class="panel">
+<summary class="panel">
+
 __Lorem ipsum is *simply dummy text*__ of the printing and typesetting industry. It has been the industry's standard *dummy text __ever since the 1500s__*.
-</aside>
+
+</summary>
 
 ## Underline
 
@@ -98,9 +106,11 @@ Place one underscore `_` at both ends of your content.
 Lorem ipsum is simply dummy text of the _printing and typesetting industry_.
 </pre>
 
-<aside class="panel">
+<summary class="panel">
+
 Lorem ipsum is simply dummy text of the _printing and typesetting industry_.
-</aside>
+
+</summary>
 
 ## Delete
 
@@ -110,9 +120,11 @@ Place two tildes `~~` at both ends of your content.
 Lorem ipsum is ~~simply~~ dummy text of the ~~printing and~~ typesetting industry.
 </pre>
 
-<aside class="panel">
+<summary class="panel">
+
 Lorem ipsum is ~~simply~~ dummy text of the ~~printing and~~ typesetting industry.
-</aside>
+
+</summary>
 
 ## Superscript
 
@@ -122,9 +134,11 @@ Put one caret `^` before **each** word.
 Lorem ipsum^[1] is simply dummy text of the printing and typesetting industry^[Citation ^needed].
 </pre>
 
-<aside class="panel">
+<summary class="panel">
+
 Lorem ipsum^[1] is simply dummy text of the printing and typesetting industry^[Citation ^needed].
-</aside>
+
+</summary>
 
 
 # Punctuation
@@ -143,9 +157,11 @@ Use three hyphens `---` to make an em dash.
 Lorem ipsum --- dummy text of the printing and typesetting industry.
 </pre>
 
-<aside class="panel">
+<summary class="panel">
+
 Lorem ipsum --- dummy text of the printing and typesetting industry.
-</aside>
+
+</summary>
 
 ## En dash
 
@@ -155,9 +171,11 @@ Use two hyphens `--` to make an en dash.
 Lorem ipsum -- dummy text of the printing and typesetting industry.
 </pre>
 
-<aside class="panel">
+<summary class="panel">
+
 Lorem ipsum -- dummy text of the printing and typesetting industry.
-</aside>
+
+</summary>
 
 ## Horizontal rules
 
@@ -177,7 +195,8 @@ Underscores
 ___
 </pre>
 
-<aside class="panel">
+<summary class="panel">
+
 Hyphens
 
 ---
@@ -189,7 +208,8 @@ Asterisks
 Underscores
 
 ___
-</aside>
+
+</summary>
 
 
 # Blockquotes
@@ -235,7 +255,7 @@ h2. Heading 2
 
 # Lists
 
-This aside shows how to create the following lists:
+This summary shows how to create the following lists:
 
 * [Number](#toc_19)
 * [Bullet](#toc_20)
@@ -304,13 +324,15 @@ Hover over [this link](http://www.softlayer.com "SoftLayer, an IBM Company") to 
 [Read our license on GitHub](../blob/master/LICENSE)
 </pre>
 
-<aside class="panel">
+<summary class="panel">
+
 [Visit our website](http://www.softlayer.com)
 
 Hover over [this link](http://www.softlayer.com "SoftLayer, an IBM Company") to see the title
 
 [Read our license on GitHub](../blob/master/LICENSE)
-</aside>
+
+</summary>
 
 ## Autolinks
 
@@ -319,11 +341,13 @@ Emulate a direct link without any specific words by putting angle brackets `<>` 
 `<http://www.softlayer.com>`<br>
 `<howdy@softlayer.com>`
 
-<aside class="panel">
+<summary class="panel">
+
 Visit our website at <http://www.softlayer.com>
 
 Email <howdy@softlayer.com> to get a quote
-</aside>
+
+</summary>
 
 
 # Images
@@ -339,11 +363,11 @@ Links and images use similar formats except:
 ![Company Logo](http://static.softlayer.com/images/info/sl_logo_215x19.jpg "SoftLayer, an IBM Company")
 </pre>
 
-<aside class="panel">
+<summary class="panel">
 
 ![Company Logo](http://static.softlayer.com/images/info/sl_logo_215x19.jpg "SoftLayer, an IBM Company")
 
-</aside>
+</summary>
 
 #### Example 2
 
@@ -351,16 +375,16 @@ Links and images use similar formats except:
 ![](http://static.softlayer.com/images/info/sl_logo_215x19.jpg "SoftLayer, an IBM Company")
 </pre>
 
-<aside class="panel">
+<summary class="panel">
 
 ![](http://static.softlayer.com/images/info/sl_logo_215x19.jpg "SoftLayer, an IBM Company")
 
-</aside>
+</summary>
 
 
 # Code
 
-This aside shows how to decorate code snippets for the following formats:
+This summary shows how to decorate code snippets for the following formats:
 
 * [Inline Code](#toc_28)
 * [Code Blocks](#toc_29)
@@ -395,7 +419,7 @@ if ($this.parent('li').hasClass('active')) return
 ```
 </pre>
 
-<aside class="panel">
+<summary class="panel">
 
 ```
 if (!selector) {
@@ -411,7 +435,7 @@ if ($this.parent('li').hasClass('active')) return
 })
 ```
 
-</aside>
+</summary>
 
 ## Code highlighting
 
@@ -447,7 +471,7 @@ class TkFrame
 ```
 </pre>
 
-<aside class="panel">
+<summary class="panel">
 
 ```ruby
 class TwoLabs < TkFrame
@@ -472,7 +496,7 @@ class TwoLabs < TkFrame
       pack('side' => 'top', 'fill' => 'both')
     }
 ```
-</aside>
+</summary>
 
 #### Example: Python
 
@@ -492,7 +516,7 @@ class TokensV2(object):
 ```
 </pre>
 
-<aside class="panel">
+<summary class="panel">
 
 ```python
 from datetime import datetime
@@ -507,7 +531,7 @@ class TokensV2(object):
   index_url = self.app.get_dispatcher('identity').get_endpoint_url(req, 'v2_auth_index')
   v2_url = self.app.get_dispatcher('compute').get_endpoint_url(req, 'v2_index')
 ```
-</aside>
+</summary>
 
 
 # Tables
@@ -577,6 +601,8 @@ Here's how to add a video from YouTube.
 [![Lefties](http://img.youtube.com/vi/1TUTwdOvAVM/0.jpg)](http://www.youtube.com/watch?v=1TUTwdOvAVM)
 </pre>
 
-<aside class="panel">
+<summary class="panel">
+
 [![Lefties](http://img.youtube.com/vi/1TUTwdOvAVM/0.jpg)](http://www.youtube.com/watch?v=1TUTwdOvAVM)
-</aside>
+
+</summary>
