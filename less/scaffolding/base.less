@@ -125,23 +125,6 @@ dt, dd {
   line-height: @line-height-normal;
 }
 
-@media (min-width: @grid-float-breakpoint) {
-  .dl-horizontal {
-    dt {
-      .text-overflow();
-      float: left;
-      clear: left;
-      width: (@component-offset-horizontal - 20);
-      text-align: right;
-    }
-
-    dd {
-      .clearfix();
-      margin-left: @component-offset-horizontal;
-    }
-  }
-}
-
 // Horizontal rule
 // -------------------------
 
