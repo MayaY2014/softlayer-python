@@ -1,24 +1,27 @@
-## Introduction
+## Our Project Page
 
-Our project page uses a content-first framework for writing web documents in Markdown. It's design is ideal for spinning up Jekyll-powered static websites on GitHub.
+We use a homegrown content-first framework for writing web documents in Markdown. It's design is ideal for spinning up Jekyll-powered static websites on GitHub.
 
 
-### Benefits
+### Built to Suit Needs 
 
-Unable to find a framework agnostic enough for both readers and writers, we began development on our own. The overarching intent for this framework includes:
+Unable to find a framework agnostic enough for both readers and writers, we began development on our own. The overarching intent here is not to reinvent the wheel, but rather to provide a gap-filler with the aesthetics that readers yearn for and the functionality that writers call for.
 
-* Writing content exclusively in Markdown
-* Guaranteeing fast load times
-* Automating repetitive tasks
-* Embedding responsiveness in its core rather than wrapping code around elements to make it responsive
-* Having indexes/tables of content built automatically
-* ~~Using one source file to serve configuration data to other components and pages~~
-* ~~Generating a configuration file instantly from the command line~~
-* Deploying minified or unminified JavaScript and CSS in production
-* Running a local instance of the site on modern Windows OS platforms
-* ~~Creating new Markdown pages instantly from the command line~~
-* ~~Hiding reading distractions~~
-* ~~Switching screen contrasts to help those that read better with a dark backdrop~~
+
+### Gap Functionality
+
+* Write content exclusively in Markdown
+* Guarantee fast load times
+* Automate repetitive tasks
+* Embed responsiveness in its core rather than wrapping code around elements to make it responsive
+* Have indexes/tables of content built automatically
+* ~~Use one source file to serve configuration data to other components and pages~~
+* ~~Generate a configuration file instantly from the command line~~
+* Deploy minified or unminified JavaScript and CSS in production
+* Run a local instance of the site on modern Windows OS platforms
+* ~~Create new Markdown pages instantly from the command line~~
+* ~~Hide reading distractions~~
+* ~~Switch screen contrasts to help those that read better with a dark backdrop~~
 
 
 ### Features and Delighters
@@ -269,24 +272,18 @@ An overview of each subdirectory.
 
 Attributes are ordered alphabetically.
 
-| Attribute ID         | Purpose                                                    |
-| -------------------- | ---------------------------------------------------------- |
-| ~~`date-milestone`~~     | ~~when the last milestone was closed~~                         |
-| ~~`date-commit`~~        | ~~when the last `git push` or `git merge` was committed~~      |
-| ~~`name-milestone`~~     | ~~name of the last milestone closed~~                          |
-| `github-contributors`   | total number of contributors for a single repo      |
-| ~~`num-members`~~        | ~~total number of active member in a single organization~~     |
-| ~~`num-pulls`~~          | ~~total number of pull requests for a single repo~~            |
-| `github-stargazers`     | total number of stargazers for a single repo               |
-| `github-repos`          | total number of public repos for a single organization     |
-| `github-version`        | version number for the last pegged released                |
-| `github-watchers`       | total number of watchers/subscribers for a single repo     |
+| Attribute ID          | Purpose                                                |
+| --------------------- | ------------------------------------------------------ |
+| `github-contributors` | total number of contributors for a single repo         |
+| `github-stargazers`   | total number of stargazers for a single repo           |
+| `github-version`      | version number for the last pegged released            |
+| `github-watchers`     | total number of watchers/subscribers for a single repo |
 
 ---
 
-## Editor Settings
+## Code Styles
 
-Use the settings below to help unify coding style for different editors.
+Use the settings below to help unify coding styles for different editors.
 
 * `indent_style = space`
 * `end_of_line = lf`
@@ -327,14 +324,13 @@ Configure Sublime Text manually by opening `Preferences` > `Settings - User`, in
 }
 </pre>
 
----
 
-## Sublime Text Packages
+#### Sublime Text Packages
 
 Sublime does not include every syntax highlight out-of-the-box. To get certain highlights, you have to install them by hand. The instructions below delve into the install processes for __CoffeeScript__, __Jekyll__, __LESS__, and __Liquid__.
 
 
-### Built-in Tools
+##### Built-in Tools
 
 We recommend using [Package Control](http://sublime.wbond.net), Sublime's built-in tool for installing themes and syntaxes.
 
@@ -346,14 +342,14 @@ If you have Package Control, skip the rest of this and click any of the links be
 * [Liquid](#liquid)
 
 
-#### CoffeeScript
+##### CoffeeScript
 
 1. Open Preferences > Package Control.
 2. Type `Install Package` and hit return.
 3. Type `Better CoffeeScript` and hit return.
 
 
-#### Jekyll
+##### Jekyll
 
 1. Open Preferences > Package Control.
 2. Type `Install Package` and hit return.
@@ -362,14 +358,14 @@ If you have Package Control, skip the rest of this and click any of the links be
 > The Jekyll package includes syntaxes for HTML, JSON, Markdown, and Textile.
 
 
-#### LESS
+##### LESS
 
 1. Open Preferences > Package Control.
 2. Type `Install Package` and hit return.
 3. Type `LESS` and hit return.
 
 
-#### Liquid
+##### Liquid
 
 1. Open Preferences > Package Control.
 2. Type `Install Package` and hit return.
