@@ -5,13 +5,15 @@ intro: Find valuable resources, useful information, and learn a little something
 baseurl: "../"
 ---
 
-# Our Initiatives
+# Our Story
 
-Our company began at the grassroots level with open source software. Not only do we still use it, we’re also firm believers in developing, sharing, and collaborating with others.
+We began at the grassroots level with open source software. Not only do we still use it, we’re also firm believers in developing, sharing, and collaborating with others.
+
+All our open source work is happening publicly on [GitHub]({{site.github.repo}}). 
 
 # Contributing
 
-All our open source work is happening publicly on [GitHub]({{site.github.repo}}). We welcome anyone to submit pull requests for new features or bug fixes, but ask that you follow a few simple guidelines.
+We welcome anyone to submit pull requests for new features or bug fixes, but ask that you follow a few simple guidelines.
 
 ## Coding Standards
 
