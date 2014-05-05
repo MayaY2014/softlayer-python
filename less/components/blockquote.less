@@ -14,7 +14,7 @@ blockquote {
     &:before {
       content: "\f10d \00a0";
       font-family: FontAwesome;
-      opacity: .5;
+      opacity: .4;
     }
   }
 
@@ -45,7 +45,7 @@ blockquote {
   }
 }
 
-// Message 
+// Message
 // -------------------------
 
 .message {
@@ -60,9 +60,13 @@ blockquote {
     margin-bottom: 0;
   }
 
+  > bold,
+  > strong {
+    font-weight: 400;
+  }
+
   > a {
     color: inherit;
-    border-bottom: 1px dotted @message-color;
-    padding-bottom: 0.05em;
+    font-weight: 700;
   }
 }

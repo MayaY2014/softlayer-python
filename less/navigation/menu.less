@@ -37,11 +37,11 @@
 
 a#menu-toggle {
   position: absolute;
-  top: 18px;
-  left: 18px;
+  top: 15px;
+  left: 15px;
   display: block;
   background-color: transparent;
-  color: @lighter7;
+  color: rgba(255,255,255,0.65);
   text-align: center;
   font-size: 25px;
   cursor: pointer;
@@ -50,7 +50,19 @@ a#menu-toggle {
     position: fixed;
     left: 268px;
     z-index: 2000;
-    color: @white;
+  }
+}
+
+@media (min-width: @screen-sm) {
+  a#menu-toggle {
+    left: 36px;
+  }
+}
+
+@media (min-width: @screen-md) {
+  a#menu-toggle {
+    top: 18px;
+    left: 18px;
   }
 }
 

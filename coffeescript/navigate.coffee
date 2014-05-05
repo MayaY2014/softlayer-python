@@ -56,3 +56,14 @@ Math.easeInOutQuad = (t, b, c, d) ->
   return c / 2 * t * t + b  if t < 1
   t--
   -c / 2 * (t * (t - 2) - 1) + b
+
+###
+
+# Uses pushState to change the URL, thereby not jumping the user across multiple pages
+
+$("a[href^=#]").on("click", function(e) {
+  e.preventDefault();
+  history.pushState({}, "", this.href);
+});
+
+###
