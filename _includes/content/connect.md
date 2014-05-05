@@ -1,4 +1,4 @@
-# Connect with Us
+# Join our Community
 
 Stay on top of what's happening in our development community.
 
