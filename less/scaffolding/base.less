@@ -74,8 +74,7 @@ a {
 p {
   margin: 0 0 @component-margin;
   > a {
-    border-bottom: 1px dotted @black;
-    padding-bottom: 0.05em;
+    .text-underline();
   }
 }
 
@@ -87,15 +86,13 @@ ul, ol {
   margin-bottom: @component-margin;
   line-height: inherit;
   > a {
-    border-bottom: 1px dotted @black;
-    padding-bottom: 0.05em;
+    .text-underline();
   }
 
   ul, ol {
     margin-bottom: 0;
     > a {
-      border-bottom: 1px dotted @black;
-      padding-bottom: 0.05em;
+      .text-underline();
     }
   }
 
@@ -104,8 +101,7 @@ ul, ol {
   }
 
   li > a {
-    border-bottom: 1px dotted @black;
-    padding-bottom: 0.05em;
+    .text-underline();
   }
 }
 
