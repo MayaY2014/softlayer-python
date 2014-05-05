@@ -5,11 +5,9 @@ intro: Find valuable resources, useful information, and learn a little something
 baseurl: "../"
 ---
 
-# Open Source Initiatives
+# Our Initiatives
 
 Our company began at the grassroots level with open source software. Not only do we still use it, we’re also firm believers in developing, sharing, and collaborating with others.
-
-{% include content/connect.md %}
 
 # Contributing
 
@@ -35,4 +33,5 @@ All our open source work is happening publicly on [GitHub]({{site.github.repo}})
 
 {% include content/versioning.md %}
 {% include content/docs.md %}
+{% include content/connect.md %}
 {% include content/license.md %}
