@@ -1,7 +1,7 @@
 ---
 layout: pages
 header: Getting Started
-intro: Everything you wanted to know about downloading and cloning, installing, searching issues, and more
+intro: Your one-stop "how to" shop for downloading, installing, searching issues, and much more
 baseurl: "../"
 ---
 
@@ -10,7 +10,7 @@ baseurl: "../"
 > [Insert content here]
 
 <summary class="message">
-Looking for stuff like **Deployment**, **Support**, and **Compatibility**? You'll find those in our [Developer's Guide]({{page.baseurl}}developers-guide).
+Looking for help with Deployment, Support, and Compatibility? Find all of that and more in our [Developer's Guide]({{page.baseurl}}developers-guide).
 </summary>
 
 
@@ -43,7 +43,7 @@ git clone https://github.com/softlayer/softlayer-python.git
 git clone git@github.com:softlayer/softlayer-python.git
 ```
 
-If all of this is making your head spin, check out [GitHub Help](http://help.github.com). It's a great resource for everything GitHub. The [Git Cheatsheet](http://github.com/github/training-materials/blob/master/downloads/github-git-cheat-sheet.pdf?raw=true) is also handy if you're the type that *learns by doing*.
+If all of this is making your head spin, check out [GitHub Help](http://help.github.com). It's a great resource for everything GitHub. The [Git Cheatsheet](http://github.com/github/training-materials/blob/master/downloads/github-git-cheat-sheet.pdf?raw=true) is also handy if you're the *learn by doing* type.
 
 
 # Install
@@ -61,7 +61,7 @@ If all of this is making your head spin, check out [GitHub Help](http://help.git
 All issues are bagged and tagged on GitHub. Narrow your search by clicking the [CLI](https://github.com/softlayer/softlayer-python/issues?labels=CLI) label.
 
 
-# Additional Documentation
+# Useful Resources
 
 * [GitHub Help](http://help.github.com)
 * [Git Cheatsheet](http://github.com/github/training-materials/blob/master/downloads/github-git-cheat-sheet.pdf?raw=true)
