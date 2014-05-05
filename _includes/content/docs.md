@@ -1,4 +1,4 @@
-# Documentation
+# Technical Docs
 
 We treat our docs like we treat our code. And like our code, we invite everyone to join in. Simply create an issue in GitHub and we'll review it.
 
