@@ -5,8 +5,8 @@
 #menu {
   position: fixed;
   z-index: 1000;
-  left: -250px;
-  width: 250px;
+  left: -228px;
+  width: 228px;
   height: 100%;
   background-color: @menu-bg;
   color: @menu-color;
@@ -23,16 +23,12 @@
   overflow-x: hidden;
 
   &.pushed-right {
-    left: 242px;
+    left: 220px;
   }
 }
 
 #menu, .opened, .content, .pushed-right {
-  -webkit-transition: all .3s ease-in-out 0;
-     -moz-transition: all .3s ease-in-out 0;
-      -ms-transition: all .3s ease-in-out 0;
-       -o-transition: all .3s ease-in-out 0;
-          transition: all .3s ease-in-out 0;
+  .transition(.3s ease-in-out)
 }
 
 a#menu-toggle {
@@ -48,7 +44,7 @@ a#menu-toggle {
 
   &.fixed {
     position: fixed;
-    left: 268px;
+    left: 238px;
     z-index: 2000;
   }
 }
