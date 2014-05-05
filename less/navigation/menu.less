@@ -37,8 +37,8 @@
 
 a#menu-toggle {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 18px;
+  left: 18px;
   display: block;
   background-color: transparent;
   color: @lighter7;
@@ -55,14 +55,14 @@ a#menu-toggle {
 }
 
 .menu-nav {
-  padding-top: 24px;
+  padding-top: 22px;
 }
 
 .menu-item {
   display: block;
-  padding: @component-padding;
+  padding: @menu-items-padding;
   color: @menu-color;
-  line-height: 1;
+  line-height: @line-height-xsmall;
 }
 
 .menu-item.active,
@@ -77,7 +77,7 @@ a#menu-toggle {
 .menu-footer {
   display: block;
   margin: 0;
-  padding: 7px 15px 0;
+  padding: @component-padding 0;
   color: @lighter4;
   word-break: break-word;
   line-height: @line-height-xsmall;
