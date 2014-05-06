@@ -1,7 +1,7 @@
 /*!
  * 
  * SoftLayer CLI
- * Framework version 0.3.0, Built on 05-05-2014
+ * Framework version 0.3.0, Built on 05-06-2014
  * Copyright (c) 2014 SoftLayer, an IBM Company. All rights reserved.
  * Code and documentation licensed under MIT.
  * 

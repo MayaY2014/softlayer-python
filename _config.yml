@@ -34,7 +34,7 @@ owner:
 
 license:
   type:           MIT
-  www:            http://raw.githubusercontent.com/softlayer/softlayer-python/master/LICENSE
+  www:            https://raw.githubusercontent.com/softlayer/softlayer-python/master/LICENSE
 
 # ==============================
 # Markdown
