@@ -1,4 +1,4 @@
-## Report Issues
+## Reporting Issues
 
 Have an issue to report? These steps will walk you through the escalation process.
 
