@@ -3,7 +3,7 @@
    ========================= */
 
 h1, .h1 {
-  margin: (floor(@font-size-h1 * @heading-margin)) 0 5px;
+  margin: (floor(@font-size-h1 * @heading-margin)) 0 4px;
   letter-spacing: @letter-spacing-large;
   font-weight: @font-weight-normal;
   font-size: @font-size-h1;
@@ -23,7 +23,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  margin: (ceil(@font-size-h4 * @heading-margin)) 0 3px;
+  margin: (ceil(@font-size-h4 * @heading-margin)) 0 4px;
   font-weight: @font-weight-bold;
   font-size: @font-size-h4;
 }
@@ -35,12 +35,24 @@ h4, .h4 {
   color: @headings-color;
   font-family: @font-family-heading;
   line-height: @line-height-heading;
-  text-rendering: optimizeLegibility;
-  small { color: @headings-color-small; font-weight: @font-weight-normal; }
+  small { 
+    color: @headings-color-small; 
+    font-weight: @font-weight-normal; 
+  }
 }
 
 // Emphasis
 // -------------------------
 
-h1, .h1 { small { font-size: 70%; }}
-h2, .h2 { small { font-size: 80%; }}
+h1, 
+.h1 { 
+  small { 
+    font-size: 70%; 
+  }
+}
+
+h2, .h2 { 
+  small { 
+    font-size: 80%; 
+  }
+}
