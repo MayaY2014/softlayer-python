@@ -10,6 +10,14 @@ blockquote {
   font-family: @font-family-serif;
   line-height: @line-height-xsmall;
 
+  p {
+    &:before {
+      content: "\f10d \00a0";
+      font-family: FontAwesome;
+      font-size: @font-size-h3;
+    }
+  }
+
   p, ul, ol {
     &:first-child {
       margin-top: 0;
