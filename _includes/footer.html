@@ -8,7 +8,12 @@
 </div>
 <div class="col-sm-2">
 
-  <a type="button" class="btn control" href="{{page.baseurl}}"><i class="fa fa-home fa-2x"></i></a>
+  {% if page.title == "index" %}  <!-- Determines which URL to piggyback based on the page title -->
+    <a type="button" class="btn control" href="{{page.baseurl}}"><i class="fa fa-home fa-2x"></i></a>
+  {% else %}
+    <a type="button" class="btn control" href="{{page.baseurl}}cli"><i class="fa fa-home fa-2x"></i></a>
+  {% endif %}
+
 
 </div>
 <div class="col-sm-5">
