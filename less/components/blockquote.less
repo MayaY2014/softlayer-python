@@ -8,6 +8,7 @@ blockquote {
   border-left: 4px solid transparent;
   color: @blockquote-color;
   font-size: @blockquote-font-size;
+  font-family: @font-family-serif;
   line-height: @line-height-xsmall;
 
   p {
@@ -31,16 +32,10 @@ blockquote {
     display: block;
     color: @blockquote-small-color;
     font-size: 80%;
+    font-family: @font-family-serif;
     line-height: @line-height-normal;
     &:before {
       content: "\2014 \00a0";
-    }
-  }
-
-  @media (min-width: @screen-sm) {
-    blockquote {
-      padding: 8px 48px @component-padding;
-      font-size: @font-size-small;
     }
   }
 }
