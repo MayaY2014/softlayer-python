@@ -5,7 +5,11 @@
 </head>
 
 <body class="content">
-  {% include menu.html %}
+  {% if page.title == "index" %} <!-- Determines which menu to show based on the page title -->
+    {% include custom.html %}
+  {% else %}
+    {% include menu.html %}
+  {% endif %}
 
     {{ content }}
 

@@ -37,21 +37,19 @@ a#menu-toggle {
   left: 15px;
   display: block;
   background-color: transparent;
-  color: rgba(255,255,255,0.65);
+  color: @white;
   text-align: center;
   font-size: 25px;
   cursor: pointer;
+
+  &.pages {
+    color: @lighter2 !important;
+  }
 
   &.fixed {
     position: fixed;
     left: 238px;
     z-index: 2000;
-  }
-}
-
-@media (min-width: @screen-sm) {
-  a#menu-toggle {
-    left: 36px;
   }
 }
 

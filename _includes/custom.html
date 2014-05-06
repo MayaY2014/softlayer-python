@@ -1,17 +1,11 @@
-{% if layout == pages %} <!-- Determines which color icon to show based on the page title -->
-<a id="menu-toggle" class="pages" href="#"><i class="fa fa-bars"></i></a> <!-- Controls originate from lateral.coffee -->
-{% else %}
 <a id="menu-toggle" href="#"><i class="fa fa-bars"></i></a> <!-- Controls originate from lateral.coffee -->
-{% endif %}
 
 <nav id="menu">
 <div class="menu-nav">
 
-  <a class="menu-item{% if page.url == "/" %} active {% endif %}" href="{{page.baseurl}}cli"><i class="fa fa-home fa-fw"></i> Home</a>
-
-  {% include handlers/items.html %}
-
-  <a class="menu-item" href="{{page.baseurl}}"><i class="fa fa-chevron-right fa-fw"></i> Python Bindings</a>
+  <a class="menu-item{% if page.url == "/" %} active {% endif %}" href="{{page.baseurl}}"><i class="fa fa-home fa-fw"></i> Home</a>
+  <a class="menu-item" href="//softlayer-python.readthedocs.org/en/latest" target="_blank"><i class="fa fa-chevron-right fa-fw"></i> Documentation</a>
+  <a class="menu-item" href="{{page.baseurl}}cli"><i class="fa fa-chevron-right fa-fw"></i> SoftLayer CLI</a>
 
   <ul class="divider"></ul>
   <a class="menu-item" href="{{site.github.repo}}" target="_blank"><i class="fa fa-github-alt fa-fw"></i> Code</a>
