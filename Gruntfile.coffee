@@ -30,16 +30,6 @@ module.exports = (grunt) ->
         ].join("&&")
         options:
           stdout: true
-      nokofix:
-        command: [
-          "gem install rake"
-          "cd $HOME"
-          "cd softlayer-python/_includes/patches"
-          "gem install nokogiri-1.6.1.beta.1.mingw.1-x64-mingw32.gem"
-          "cd ../../"
-        ].join("&&")
-        options:
-          stdout: true
 
     clean:
       # Does some light cleaning before the party begins
@@ -160,10 +150,6 @@ module.exports = (grunt) ->
     "concat"
     "recess:unminify"
     "clean:after"
-  ]
-
-  grunt.registerTask "fix", [
-    "shell:nokofix"
   ]
 
   grunt.registerTask "install", [
