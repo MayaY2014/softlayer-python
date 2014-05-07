@@ -3,7 +3,7 @@
 We use a homegrown content-first framework for writing web documents in Markdown. It's design is ideal for spinning up Jekyll-powered static websites on GitHub.
 
 
-### Built to Suit Needs 
+### Built to Suit
 
 Unable to find a framework agnostic enough for both readers and writers, we began development on our own. The overarching intent here is not to reinvent the wheel, but rather to provide a gap-filler with the aesthetics that readers yearn for and the functionality that writers call for.
 
@@ -15,13 +15,8 @@ Unable to find a framework agnostic enough for both readers and writers, we bega
 * Automate repetitive tasks
 * Embed responsiveness in its core rather than wrapping code around elements to make it responsive
 * Have indexes/tables of content built automatically
-* ~~Use one source file to serve configuration data to other components and pages~~
-* ~~Generate a configuration file instantly from the command line~~
 * Deploy minified or unminified JavaScript and CSS in production
 * Run a local instance of the site on modern Windows OS platforms
-* ~~Create new Markdown pages instantly from the command line~~
-* ~~Hide reading distractions~~
-* ~~Switch screen contrasts to help those that read better with a dark backdrop~~
 
 
 ### Features and Delighters
@@ -58,6 +53,19 @@ Aside from [Grunt](http://gruntjs.com "Grunt"), we baked in a few automated task
 * Load a fallback jQuery library if the bootstrapped CDN fails
 
 ---
+
+## Feature Backlog
+
+Since projects are often large and unlike the ones before, and since ideas come and go and work priorities change, we keep a running, prioritized list of features (below) that are slated for future releases.
+
+1. Create new Markdown pages (with front-matter) instantly from the command line
+2. Hide reading distractions
+3. Switch screen contrasts to help those that read better with a dark backdrop
+4. Use one source file to serve configuration data to other components and pages
+5. Generate a configuration file instantly from the command line
+
+---
+
 
 ## Prerequisites
 
