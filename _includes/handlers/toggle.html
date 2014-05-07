@@ -1,12 +1,6 @@
-<!-- Determines which color icon to show based on the page title -->
-{% if layout != pages %}
-  {% if page.title == "index" %} <!-- Determines which menu to show based on the page title -->
+<!-- Determines which menu to show based on the page title -->
+{% if page.title == "index" %}
   {% include custom.html %}
-
-  {% elsif page.title != "index" %}
-  <a id="menu-toggle" href="#"><i class="fa fa-bars"></i></a> <!-- Controls originate from lateral.coffee -->
-  {% endif %}
-
-{% elsif layout == pages %}
-  <a id="menu-toggle" href="#" class="pages"><i class="fa fa-bars"></i></a> <!-- Controls originate from lateral.coffee -->
+{% else %}
+ {% include menu.html %}
 {% endif %}
