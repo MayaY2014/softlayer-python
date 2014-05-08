@@ -52,51 +52,22 @@
 .solid-blue  {.solid-button-variant(@solid-btn-blue-color; @solid-btn-blue-bg; @solid-btn-blue-border);}
 .solid-white {.solid-button-variant(@solid-btn-white-color; @solid-btn-white-bg; @solid-btn-white-border);}
 
-// Sphere
-// -------------------------
-
-.sphere {
-  margin-top: 15px;
-  padding: @component-padding;
-  width: 150px;
-  height: 150px;
-  border: 1px solid @lighter6;
-  border-radius: 50%;
-  background-color: transparent;
-  color: darken(@lighter4, 2%);
-  font-size: floor(@button-font-size-normal * 3);
-  -webkit-transition: background .3s ease-in-out;
-     -moz-transition: background .3s ease-in-out;
-          transition: background .3s ease-in-out;
-}
-
-.sphere:hover,
-.sphere:focus {
-  border: 1px solid darken(@lighter6, 8%);
-  background-color: inherit;
-  color: darken(@lighter4, 8%);
-}
-
 // Scroll
 // -------------------------
 
 #scroll-up {
+  .transition(all .3s ease-in-out);
   position: fixed;
-  right: 14px;
-  bottom: 10px;
+  right: 15px;
+  bottom: 15px;
   visibility: hidden;
-  padding: 10px 14px;
+  padding: 15px;
   border-radius: @border-radius-full;
   background-color: @lighter2;
   color: @white;
   text-decoration: none;
   line-height: 0;
   opacity: .2;
-  -webkit-transition: all .3s ease-in-out 0;
-     -moz-transition: all .3s ease-in-out 0;
-      -ms-transition: all .3s ease-in-out 0;
-       -o-transition: all .3s ease-in-out 0;
-          transition: all .3s ease-in-out 0;
 }
 
 @media (min-width: @screen-sm) {
@@ -107,7 +78,7 @@
     opacity: .4;
 
     &:hover {
-      bottom: 12px;
+      bottom: 18px;
       color: @lighter4;
     }
   }
@@ -125,12 +96,12 @@
     .center-block();
     display: inherit;
     margin-top: -11px;
-    padding: 8px 0;
-    width: 44px;
+    padding: 7px 0;
+    width: 43px;
     height: 44px;
-    border-color: transparent;
+    border-color: @lighter5;
     border-radius: @border-radius-full;
-    background-color: @lighter4;
+    background-color: @lighter5;
     color: @white;
     font-size: inherit;
     opacity: .8;
