@@ -84,7 +84,7 @@ module.exports = (grunt) ->
           compile: true
           compress: false
           banner: "<%= banner %>"
-        src: ["less/main.less"]
+        src: ["less/@import.less"]
         dest: "public/css/main.css"
 
       # And we're flattening CSS, as well
@@ -93,7 +93,7 @@ module.exports = (grunt) ->
           compile: true
           compress: true
           banner: "<%= banner %>"
-        src: ["less/main.less"]
+        src: ["less/@import.less"]
         dest: "public/css/main.css"
 
     # Makes starting Jekyll simpler

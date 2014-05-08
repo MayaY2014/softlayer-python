@@ -58,8 +58,8 @@
 #scroll-up {
   .transition(all .3s ease-in-out);
   position: fixed;
-  right: 15px;
-  bottom: 15px;
+  right: 11px;
+  bottom: 11px;
   visibility: hidden;
   padding: 15px;
   border-radius: @border-radius-full;
@@ -67,11 +67,13 @@
   color: @white;
   text-decoration: none;
   line-height: 0;
-  opacity: .2;
+  opacity: .15;
 }
 
 @media (min-width: @screen-sm) {
   #scroll-up {
+    right: 15px;
+    bottom: 15px;
     background-color: transparent;
     color: @lighter5;
     font-size: 22px;
@@ -94,6 +96,7 @@
 @media (min-width: @screen-sm) {
   .control {
     .center-block();
+    .transition(background .3s ease-in-out);
     display: inherit;
     margin-top: -11px;
     padding: 7px 0;
@@ -105,9 +108,6 @@
     color: @white;
     font-size: inherit;
     opacity: .8;
-    -webkit-transition: background .3s ease-in-out;
-       -moz-transition: background .3s ease-in-out;
-            transition: background .3s ease-in-out;
   }
 
   .control:hover,
