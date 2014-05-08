@@ -1,7 +1,7 @@
 ---
 layout: pages
 header: Getting Started
-intro: Your one-stop "how to" shop for downloading, installing, searching issues, and much more
+intro: Your "how to" source for downloading, installing, searching issues, and much more
 baseurl: "../"
 ---
 
