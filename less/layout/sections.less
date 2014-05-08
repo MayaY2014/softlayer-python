@@ -11,7 +11,7 @@ section {
 // -------------------------
 
 .hero {
-  padding: 44px 0 66px;
+  padding: 33px 0 77px;
   width: 100%;
   height: 100%;
   height: auto;
@@ -28,14 +28,14 @@ section {
 }
 
 .hero-name {
-  margin: 100px 0 0;
+  margin: 99px 0 0;
   color: @hero-color;
   font-weight: @font-weight-bold;
   font-size: 39px;
 }
 
 .hero-tagline {
-  margin: 5px 0 11px;
+  margin: 4px 0 11px;
   color: @hero-tagline-color;
   letter-spacing: @letter-spacing-normal;
   font-weight: @font-weight-light;
@@ -48,8 +48,8 @@ section {
   margin-bottom: 22px;
 
   > a.btn.white {
-    margin-bottom: auto 2px;
-    width: 130px;
+    margin: auto 4px;
+    width: 132px;
   }
 }
 
@@ -64,7 +64,7 @@ section {
 
 @media (min-width: @screen-md) {
   .hero {
-    padding: 220px 0 230px;
+    padding: 220px 0 231px;
   }
 
   .hero-name {
@@ -89,12 +89,12 @@ section {
 // -------------------------
 
 .banner {
+  .transition-duration(.5s);
+  .transition-property(all);
   width: 100%;
   height: auto;
   background-color: @banner-bg;
   color: @banner-color;
-  transition-duration: .5s;
-  transition-property: all;
 
   h2 {
     margin: 18px 0 0;
