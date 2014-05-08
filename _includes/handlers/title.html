@@ -1,5 +1,13 @@
 {% if page.header == null %}
-  {{site.project.name}} &middot; {{site.owner.name}}
-{% else %}
-  {{page.header}} &middot; {{site.project.name}}
+
+  {% if page.title == "index" %}
+    {{site.project.alias}} &middot; {{site.owner.name}}
+
+  {% elsif page.title == "cli" %}
+    {{site.project.name}} &middot; {{site.owner.name}}
+  {% endif %}
+
+  {% else %}
+    {{page.header}} &middot; {{site.project.name}}
+
 {% endif %}
