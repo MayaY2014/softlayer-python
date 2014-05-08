@@ -1,25 +1,15 @@
-## Our Project Page
+## Our GitHub Content
 
 We use a homegrown, content-first framework that provides the facilities for writing in Markdown. It's design is ideal for spinning up Jekyll-powered static websites on GitHub.
 
+### Backstory
 
-### Built to Suit
-
-Unable to find a framework agnostic enough for both readers and writers, we began development on our own. The overarching intent is not to reinvent the wheel, but rather to provide a gap-filler with the aesthetics that readers yearn for and the functionality that writers call for.
-
-
-### Gap Functionality
-
-* Write content exclusively in Markdown
-* Guarantee fast load times
-* Automate repetitive tasks
-* Embed responsiveness in its core rather than wrapping code around elements to make it responsive
-* Have indexes/table of contents built automatically
-* Deploy minified or unminified JavaScript and CSS in production
-* Run a local instance of your site on modern Windows OS platforms
+Unable to find a framework agnostic enough for both readers and writers, we began development on our own. The overarching intent is not to reinvent the wheel, but rather to provide a feature-rich, gap-filled framework with the aesthetics that readers yearn for and the functionality that writers call for.
 
 
-### Features and Delighters
+---
+
+## Features and Delighters
 
 * Free web hosting on GitHub with [Jekyll](http://jekyllrb.com "Jekyll")
 * [Grunt](http://gruntjs.com "Grunt") automation for handling repetitive tasks
@@ -39,6 +29,15 @@ Unable to find a framework agnostic enough for both readers and writers, we bega
 * Shopify's [Liquid](http://liquidmarkup.org "Liquid") templating language
 * [Minimal-UI viewport](http://github.com/h5bp/html5-boilerplate/blob/master/doc/extend.md#web-apps) support for iOS 7.1+
 
+### Gap Functionality
+
+* Write content exclusively in Markdown
+* Guarantee fast load times
+* Automate repetitive tasks
+* Embed responsiveness in its core rather than wrapping code around elements to make it responsive
+* Have indexes/table of contents built automatically
+* Deploy minified or unminified JavaScript and CSS in production
+* Run a local instance of your site on modern Windows OS platforms
 
 ### Baked-in Automation
 
@@ -52,9 +51,10 @@ Aside from [Grunt](http://gruntjs.com "Grunt"), we baked in a few automated task
 * Fetch org and repo data from GitHub
 * Load a fallback jQuery library if the CDN bootstrap fails
 
+
 ---
 
-## Feature Backlog
+## Backlog Items
 
 Since projects are often large and unlike the ones before, and since ideas come and go and work priorities change, we keep a running, prioritized list of features (below) that are slated for future releases.
 
@@ -64,8 +64,8 @@ Since projects are often large and unlike the ones before, and since ideas come 
 4. Use one source file to serve configuration data to other components and pages
 5. Generate a clean configuration file instantly from the command line
 
----
 
+---
 
 ## Prerequisites
 
@@ -78,6 +78,7 @@ __Windows users:__ Read through Yi Zeng's ["Setup Jekyll on Windows" article](ht
 * [Node v0.10.0](http://nodejs.org/download)
 
 Note: Pygments v1.6 is not compatible with Python 3. __You must have Python 2 installed__ until Pygments v2.0 is released.
+
 
 ---
 
@@ -104,6 +105,7 @@ Note: Pygments v1.6 is not compatible with Python 3. __You must have Python 2 in
         npm install
         grunt install
 
+
 ---
 
 ## Grunt
@@ -117,7 +119,6 @@ Note: Pygments v1.6 is not compatible with Python 3. __You must have Python 2 in
 
 To get started, check out the [Grunt Tasks](#grunt-tasks) section below.
 
-
 ### Grunt Tasks
 
 Run any of these commands to initiate a task (in alphabetical order).
@@ -128,14 +129,12 @@ Run any of these commands to initiate a task (in alphabetical order).
 * [grunt serve](#grunt-serve)
 * [grunt test](#grunt-test)
 
-
 #### grunt build
 
 Running `grunt build` performs the following:
 
 1. Concats and minifies `*.coffee` files to `*.js` using [UglifyJS](http://lisperator.net/uglifyjs)
 2. Concats and minifies `*.less` files to `*.css` using [RECESS](http://twitter.github.io/recess)
-
 
 #### grunt install
 
@@ -144,7 +143,6 @@ Running `grunt install` performs the following:
 1. Installs [Bundler](http://bundler.io)
 2. Reads the Rubygem dependencies from [Gemfile](gemfile) in the root
 3. Uses Bundler's CLI to installs all of the required gems
-
 
 #### grunt preview
 
@@ -155,7 +153,6 @@ Running `grunt preview` performs the following:
 3. Regenerates the site when files are modified (except CoffeeScript and LESS stylesheets)
 
 Preview mode lasts forever. It will not timeout after a period of non-usage. In order to kill it, press `CTRL+C`.
-
 
 #### grunt serve
 
@@ -169,7 +166,6 @@ This tasks combines `grunt build` and `grunt preview`. Running `grunt serve` per
 
 Like with `grunt preview`, serve mode lasts forever. It will not timeout after a period of non-usage. In order to kill it, press `CTRL+C`.
 
-
 #### grunt test
 
 Running `grunt test` performs the following:
@@ -177,7 +173,6 @@ Running `grunt test` performs the following:
 1. Builds the website locally in the `_site` directory
 2. Tests all `*html` files against [W3's HTML validation service](http://validator.w3.org)
 3. Spits out logs if it finds any issues
-
 
 ### Alias Tasks
 
@@ -188,11 +183,11 @@ The tasks listed above are referred to as "Alias" tasks. They're designed specif
 * Globbing multiple dependencies/plugins
 * Creating files based on different options, sources, and destinations
 
-#### Dependencies
+#### Dev Dependencies
 
 This table shows which dependencies each Alias tasks uses.
 
-| Task | Grunt Command | Dependencies |
+| Task | Grunt Command | Dev Dependencies |
 | ---- | ------------- | ------------ |
 | Build | `grunt build` | clean, coffee, concat, uglify, recess |
 | Install | `grunt install` | shell |
@@ -200,6 +195,7 @@ This table shows which dependencies each Alias tasks uses.
 | Serve | `grunt serve` | clean, coffee, concat, uglify, recess, jekyll |
 | Test | `grunt test` | jekyll, validation |
 
+> Dependencies for Grunt/Node are updated often by their original authors. To keep up with them, we test and update the versions in `package.json`. But, dependencies do not update themselves automatically. In order for you to install the latest versions, run `npm update`.
 
 ### Basic Tasks
 
@@ -215,13 +211,10 @@ Unlike Alias tasks, Basic tasks perform a much smaller set of instructions. Only
 
 ---
 
-## Updating Dependencies
-
-Dependencies for Grunt/Node are updated often by their original authors. To keep up with them, we add new versions to `package.json`. But, dependencies do not update themselves automatically. In order for you to install the latest versions, run `npm update`. 
 
 ## Directory Structure
 
-Below is the basic directory structure --- not including `node_modules`, `_site`, or any directories made specifically for one-off projects.
+Below is the basic directory structure --- not including `node_modules` (Grunt), `_site` (Jekyll), or any directories made specifically for one-off projects.
 
 <pre>
 ├── _includes
@@ -242,7 +235,7 @@ Below is the basic directory structure --- not including `node_modules`, `_site`
 
 ### Directory
 
-An overview of what each directory does/contains.
+Here's an overview of what each directory does/contains.
 
 | Directory  | Overview  |
 | ---------- | --------- |
@@ -255,7 +248,7 @@ An overview of what each directory does/contains.
 
 ### Subdirectory
 
-An overview of each subdirectory.
+Here's an overview of each subdirectory.
 
 | Directory | Subdirectory | Overview |
 | --------- | ------------ | -------- |
@@ -266,18 +259,21 @@ An overview of each subdirectory.
 | public | images | The source for all images, including favicons and logos. |
 | public | js | Directory for static JavaScript resources. |
 
+
 ---
 
 ## JavaScript CSS Selectors
 
-Several CSS ID selectors are embedded within JavaScript and rendered on the home/landing page. The table below indicates the name and purpose of these selectors (in alphabetical order).
+Several CSS ID selectors are embedded within JavaScript and rendered on the home/landing page. The table below provides the name and purpose of each selectors (in alphabetical order).
 
 | ID Selector           | Purpose                                                |
 | --------------------- | ------------------------------------------------------ |
 | `github-contributors` | total number of contributors for a single repo         |
+| `github-repos`        | total number of repos for a single organization        |
 | `github-stargazers`   | total number of stargazers for a single repo           |
 | `github-version`      | version number for the last pegged released            |
 | `github-watchers`     | total number of watchers/subscribers for a single repo |
+
 
 ---
 
@@ -294,7 +290,6 @@ Use the settings below to help unify coding styles for different editors.
 
 Read the [Spacing](#spacing) section below for more information about indent size.
 
-
 ### Spacing
 
 For consistency, use two spaces for the following file types.
@@ -307,7 +302,6 @@ For consistency, use two spaces for the following file types.
 * *.less (LESS)
 * *.md (Markdown)
 * *.yml (YAML)
-
 
 ### Sublime Text
 
@@ -324,11 +318,9 @@ Configure Sublime Text manually by opening `Preferences` > `Settings - User`, in
 }
 </pre>
 
-
 #### Sublime Text Packages
 
 Sublime does not include every syntax highlight out-of-the-box. To get certain highlights, you have to install them by hand. The instructions below delve into the install processes for __CoffeeScript__, __Jekyll__, __LESS__, and __Liquid__.
-
 
 ##### Built-in Tools
 
@@ -341,13 +333,11 @@ If you have Package Control, skip the rest of this and click any of the links be
 * [LESS](#less)
 * [Liquid](#liquid)
 
-
 ##### CoffeeScript
 
 1. Open Preferences > Package Control.
 2. Type `Install Package` and hit return.
 3. Type `Better CoffeeScript` and hit return.
-
 
 ##### Jekyll
 
@@ -357,13 +347,11 @@ If you have Package Control, skip the rest of this and click any of the links be
 
 > The Jekyll package includes syntaxes for HTML, JSON, Markdown, and Textile.
 
-
 ##### LESS
 
 1. Open Preferences > Package Control.
 2. Type `Install Package` and hit return.
 3. Type `LESS` and hit return.
-
 
 ##### Liquid
 
@@ -372,9 +360,3 @@ If you have Package Control, skip the rest of this and click any of the links be
 3. Type `Siteleaf Liquid Syntax` and hit return.
 
 > The Liquid package includes syntax for HTML.
-
----
-
-## Useful Resources
-
-* [Git Automation with OAuth Tokens](http://help.github.com/articles/git-automation-with-oauth-tokens)
