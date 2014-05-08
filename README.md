@@ -1,11 +1,11 @@
 ## Our Project Page
 
-We use a homegrown content-first framework for writing web documents in Markdown. It's design is ideal for spinning up Jekyll-powered static websites on GitHub.
+We use a homegrown, content-first framework that provides the facilities for writing in Markdown. It's design is ideal for spinning up Jekyll-powered static websites on GitHub.
 
 
 ### Built to Suit
 
-Unable to find a framework agnostic enough for both readers and writers, we began development on our own. The overarching intent here is not to reinvent the wheel, but rather to provide a gap-filler with the aesthetics that readers yearn for and the functionality that writers call for.
+Unable to find a framework agnostic enough for both readers and writers, we began development on our own. The overarching intent is not to reinvent the wheel, but rather to provide a gap-filler with the aesthetics that readers yearn for and the functionality that writers call for.
 
 
 ### Gap Functionality
@@ -14,9 +14,9 @@ Unable to find a framework agnostic enough for both readers and writers, we bega
 * Guarantee fast load times
 * Automate repetitive tasks
 * Embed responsiveness in its core rather than wrapping code around elements to make it responsive
-* Have indexes/tables of content built automatically
+* Have indexes/table of contents built automatically
 * Deploy minified or unminified JavaScript and CSS in production
-* Run a local instance of the site on modern Windows OS platforms
+* Run a local instance of your site on modern Windows OS platforms
 
 
 ### Features and Delighters
@@ -32,7 +32,7 @@ Unable to find a framework agnostic enough for both readers and writers, we bega
 * [jQuery](http://jquery.com "jQuery")
 * Pretty URLs
 * Google's [Universal Analytics](http://www.google.com/analytics) snippet with the ability to [track page scrolls](https://github.com/h5bp/html5-boilerplate/blob/master/doc/extend.md#google-universal-analytics)
-* [Noto Sans](http://www.google.com/fonts/specimen/Noto+Sans) font for headings and titles
+* ~~[Noto Sans](http://www.google.com/fonts/specimen/Noto+Sans) font for headings and titles~~
 * [Normalize](http://necolas.github.com/normalize.css) for CSS normalizations and resets
 * Scripts built with [CoffeeScript](http://coffeescript.org "CoffeeScript") and transpiled into JavaScript
 * [LESS](http://lesscss.org "LESS") dynamic stylesheets for variables, mixins, nesting, and more
@@ -46,11 +46,11 @@ We're big proponents of the DRY (don't repeat yourself) principle. That's why au
 
 Aside from [Grunt](http://gruntjs.com "Grunt"), we baked in a few automated tasks of our own.
 
-* Create links in the menu when new pages are added
+* Show links in the menu for specific content pages
 * Dynamically build the subnav's table of contents
-* Enable or disable Google Analytics
-* Pull in statistical data from GitHub
-* Load a fallback jQuery library if the bootstrapped CDN fails
+* Enable or disable Google Analytics and scroll tracking
+* Fetch org and repo data from GitHub
+* Load a fallback jQuery library if the CDN bootstrap fails
 
 ---
 
@@ -59,10 +59,10 @@ Aside from [Grunt](http://gruntjs.com "Grunt"), we baked in a few automated task
 Since projects are often large and unlike the ones before, and since ideas come and go and work priorities change, we keep a running, prioritized list of features (below) that are slated for future releases.
 
 1. Create new Markdown pages (with front-matter) instantly from the command line
-2. Hide reading distractions
-3. Switch screen contrasts to help those that read better with a dark backdrop
+2. Provide a switch to hide reading distractions
+3. Provide a switch that transitions screen contrasts from light to dark
 4. Use one source file to serve configuration data to other components and pages
-5. Generate a configuration file instantly from the command line
+5. Generate a clean configuration file instantly from the command line
 
 ---
 
@@ -71,7 +71,7 @@ Since projects are often large and unlike the ones before, and since ideas come 
 
 Our framework requires the minimum versions below for Ruby, Python, and Node. Click the links to get download and installation docs for your OS.
 
-__Windows users:__ Read through Yi Zeng's ["Setup Jekyll on Windows" article](http://yizeng.me/2013/05/10/setup-jekyll-on-windows "Setup Jekyll on Windows") before starting your install. It will save you a ton of time and agony.
+__Windows users:__ Read through Yi Zeng's ["Setup Jekyll on Windows" article](http://yizeng.me/2013/05/10/setup-jekyll-on-windows "Setup Jekyll on Windows") before getting into the thick of it. It will save you a ton of time and agony.
 
 * [Ruby v1.9.3](http://www.ruby-lang.org/en/installation)
 * [Python v2.7.5](http://www.python.org/download) (see note)
@@ -112,10 +112,10 @@ Note: Pygments v1.6 is not compatible with Python 3. __You must have Python 2 in
 
 * Concatenating and minifying LESS and CoffeeScript into CSS and JS, respectively
 * Validating HTML markup
-* Installing runtime dependencies for Ruby
+* Installing runtime dependencies for Ruby and Node
 * Previewing work locally before pushing to GitHub
 
-To get started, check out the [Grunt Tasks](#grunt-tasks) section.
+To get started, check out the [Grunt Tasks](#grunt-tasks) section below.
 
 
 ### Grunt Tasks
@@ -133,8 +133,8 @@ Run any of these commands to initiate a task (in alphabetical order).
 
 Running `grunt build` performs the following:
 
-1. Concats and minifies `*.js` files using [UglifyJS](http://lisperator.net/uglifyjs/)
-2. Transforms, compiles, and compresses `*.less` to `*.css` using [RECESS](http://twitter.github.io/recess)
+1. Concats and minifies `*.coffee` files to `*.js` using [UglifyJS](http://lisperator.net/uglifyjs)
+2. Concats and minifies `*.less` files to `*.css` using [RECESS](http://twitter.github.io/recess)
 
 
 #### grunt install
@@ -152,7 +152,7 @@ Running `grunt preview` performs the following:
 
 1. Builds the website locally in the `_site` directory
 2. Creates a local environment on [http://localhost:4000](http://localhost:4000)
-3. Regenerates the site when files are modified
+3. Regenerates the site when files are modified (except CoffeeScript and LESS stylesheets)
 
 Preview mode lasts forever. It will not timeout after a period of non-usage. In order to kill it, press `CTRL+C`.
 
@@ -161,8 +161,8 @@ Preview mode lasts forever. It will not timeout after a period of non-usage. In 
 
 This tasks combines `grunt build` and `grunt preview`. Running `grunt serve` performs the following:
 
-1. Concats and minifies `*.js` files using [UglifyJS](http://lisperator.net/uglifyjs/)
-2. Transforms, compiles, and compresses `*.less` to `*.css` using [RECESS](http://twitter.github.io/recess)
+1. Concats and minifies `*.coffee` files to `*.js` using [UglifyJS](http://lisperator.net/uglifyjs)
+2. Concats and minifies `*.less` files to `*.css` using [RECESS](http://twitter.github.io/recess)
 3. Builds the website locally in the `_site` directory
 4. Creates a local environment on [http://localhost:4000](http://localhost:4000)
 5. Watches and regenerates a new `_site` directory when a file is modified (except CoffeeScript and LESS stylesheets)
@@ -181,7 +181,7 @@ Running `grunt test` performs the following:
 
 ### Alias Tasks
 
-The tasks listed above are referred to as "Alias" tasks. They're designed specifically for this boilerplate's framework and perform two or more of high-level functions:
+The tasks listed above are referred to as "Alias" tasks. They're designed specifically for this framework and perform two or more of high-level functions:
 
 * Reading in configuration data from package.json, config.yml, or OS environment variables
 * Generating metadata dynamically
@@ -207,17 +207,17 @@ Unlike Alias tasks, Basic tasks perform a much smaller set of instructions. Only
 
 | Task   | Grunt Command | Description |
 | ------ | ------------- | ----------- |
-| Clean  | `grunt clean:after` | Deletes temp .cache directory used during `grunt build` and `grunt serve` |
-| Jekyll | `grunt jekyll:preview` | Same as the alias task `grunt preview`|
-| Recess | `grunt recess:unminify` | Compiles LESS files and drops a fresh CSS stylesheet in the `public/css/` directory |
-| Recess | `grunt recess:minify` | Compiles and minifies LESS files and drops a fresh CSS stylesheet in the `public/css/` directory |
-| Shell  | `grunt shell:bundler ` | Same as the alias task `grunt install` |
+| Clean  | `grunt clean:after` | Deletes temp .stash directory used during `grunt build` and `grunt serve` |
+| Jekyll | `grunt jekyll:preview` | Same as the Alias `grunt preview` task |
+| Recess | `grunt recess:unminify` | Compiles LESS files and drops a fresh CSS stylesheet into the `public/css/` directory |
+| Recess | `grunt recess:minify` | Compiles and minifies LESS files and drops a fresh CSS stylesheet into the `public/css/` directory |
+| Shell  | `grunt shell:bundler ` | Same as the Alias `grunt install` task |
 
 ---
 
 ## Updating Dependencies
 
-Dependencies for Grunt/Node are updated often by their original authors. To keep up with them, we add new dependency versions to `package.json`. Unfortunately, dependencies do not update themselves automatically. In order for you to install the latest versions, run `npm update`. 
+Dependencies for Grunt/Node are updated often by their original authors. To keep up with them, we add new versions to `package.json`. But, dependencies do not update themselves automatically. In order for you to install the latest versions, run `npm update`. 
 
 ## Directory Structure
 
@@ -231,16 +231,12 @@ Below is the basic directory structure --- not including `node_modules`, `_site`
 ├── _layout
 ├── coffeescript
 ├── less
-│   ├── components
-│   ├── layout
-│   ├── navigation
-│   └── scaffolding
 ├── public
 │   ├── css
 │   ├── images
 │   └── js
 
-5 directories, 10 subdirectories
+5 directories, 6 subdirectories
 </pre>
 
 
@@ -250,7 +246,7 @@ An overview of what each directory does/contains.
 
 | Directory  | Overview  |
 | ---------- | --------- |
-| _includes | Contains “partials” (smaller, reusable chunks of content). Add semantic elements, like **header**, **footer**, and **nav**, and use them repeatedly. The `{% include file.ext %}` tag indicates a partial in your content. |
+| _includes | Contains “partials” (smaller, reusable chunks of content) and semantic elements. Any content in here is used repeatedly. The `{% include file.ext %}` tag indicates a partial in your content. |
 | _layouts | Canned, reusable templates. Design static layouts for specific needs, like **pages**, **news**, **articles**, and **blogs**. The `{{content}}` tag injects external content into your layouts. |
 | coffeescript | The source for `*.coffee` scripts. Transpiled JavaScript files are stored in `public/javascript`. |
 | less | The source for `*.less` stylesheets. Transpiled CSS files are stored in `public/css`. |
@@ -263,24 +259,20 @@ An overview of each subdirectory.
 
 | Directory | Subdirectory | Overview |
 | --------- | ------------ | -------- |
-| _includes | content ||
-| _includes | featured ||
-| _includes | handlers ||
-| less | components | Style-basic HTML components, including `<table>`, `<code>`, `<img>`, and `<button>`. Most components in here have their own dedicated opening and closing tag. |
-| less | layout ||
-| less | navigation ||
-| less | scaffolding ||
-| public | css ||
-| public | images ||
-| public | js ||
+| _includes | content | Stores reusable, plain-text snippets for documentation.  |
+| _includes | featured | Individual sections used for the home/landing page. |
+| _includes | handlers | Contains [logic tags](http://docs.shopify.com/themes/liquid-basics) for the Liquid templating engine. |
+| public | css | Directory for static CSS resources. |
+| public | images | The source for all images, including favicons and logos. |
+| public | js | Directory for static JavaScript resources. |
 
 ---
 
-## JavaScript CSS Attributes
+## JavaScript CSS Selectors
 
-Attributes are ordered alphabetically.
+Several CSS ID selectors are embedded within JavaScript and rendered on the home/landing page. The table below indicates the name and purpose of these selectors (in alphabetical order).
 
-| Attribute ID          | Purpose                                                |
+| ID Selector           | Purpose                                                |
 | --------------------- | ------------------------------------------------------ |
 | `github-contributors` | total number of contributors for a single repo         |
 | `github-stargazers`   | total number of stargazers for a single repo           |
@@ -305,7 +297,7 @@ Read the [Spacing](#spacing) section below for more information about indent siz
 
 ### Spacing
 
-For consistency, use two spaces for the following file types:
+For consistency, use two spaces for the following file types.
 
 * *.css (CSS)
 * *.coffee (CoffeeScript)
